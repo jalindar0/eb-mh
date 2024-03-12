@@ -1,0 +1,4711 @@
+<body>
+  <form
+    method="post"
+    action="./Home.aspx"
+    id="aspnetForm"
+    ng-app="myApp"
+    class="ng-scope ng-valid-maxlength ng-dirty ng-valid-parse ng-valid-number ng-valid-pattern ng-valid-minlength ng-valid ng-valid-required"
+  >
+    <div class="aspNetHidden">
+      <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+      <input
+        type="hidden"
+        name="__EVENTARGUMENT"
+        id="__EVENTARGUMENT"
+        value=""
+      />
+      <input
+        type="hidden"
+        name="__VIEWSTATE"
+        id="__VIEWSTATE"
+        value="YMNw5dszLP2wOCkpC5xViP3klOIPtWhDc2tGh5k7enXv2K5727qLS7O9M1GBjDDzky3djrKRED4cLy9ryMRMJQiNzjHPv1U5rEpizhdIEXI+D+7XuhzeRtP1kcBtCqea97X6IvSoAU0AeTVyzZB5oylJGOGOIfxEZ2MjoFQmyBZZR74pPmunxzrQdg3LnXtig4CqZTs1HAbO3CIgzl2jNCiwESRXVi/7EqSwrBgLow88YLIaBzfmLQv54uuWyIG9OoehLdbB98EHKsAlX1QsrmuFXtLUyJoi38MRq0HH3wPHAVsBT5x6dOWafRQz0vpFApwPROrcH3uIDIBtDHCLOpWmMeN/kjIFWrJEb+e/hCZf1v+yhyMI4hecZdL2UE9th5Q2GsZhYE1Of/yYWDDXQ5Sxq6efzI8dgGPAR1/SB9AQh9auL5CXH2hNJbdJmLKgseXJ+wVEwO5DrXyEOQHbhdR5lz6sxSsA6ETLRAFb6NWiITizR13jq4qtlVTUrYKlOisRHjuVb2Ip0ZHZCUMt93zVEJY="
+      />
+    </div>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var theForm = document.forms["aspnetForm"];
+      if (!theForm) {
+        theForm = document.aspnetForm;
+      }
+      function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || theForm.onsubmit() != false) {
+          theForm.__EVENTTARGET.value = eventTarget;
+          theForm.__EVENTARGUMENT.value = eventArgument;
+          theForm.submit();
+        }
+      }
+      //]]>
+    </script>
+
+    <script
+      src="/Pune/WebResource.axd?d=JIi1K-ELDy6DrefzYyBzO_weCFV73rLYSpPPgFjGjV5QS1eLiy3Do3ajKWv8lm8un8R6fX9QDE2KgKPFq35oR_74T081&amp;t=638292301165186153"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="/Pune/ScriptResource.axd?d=afgUyHIw5uxxltolm-s8fMfaIpOUbFeQnUD2EIWImzQ7BF3KdpQbgIoIw8JNMnms01bjRAzwtUVNLJU5hLy7SuwBZjjLPwAlNtEkXmggSM485m7282bX8-JOXDVffhuLIx8KUO59P-KHMYJ9Xkc4XJqS6EU1&amp;t=ffffffffa0418512"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/Pune/ScriptResource.axd?d=eCr5Rj1WezOStWE3WS3xd0aQNJvfuk_VJBUeb4-ovZ5JYxLd8CSfo_GYRSVQAD2PYM-aQLujliILICFZ3B2tE6V-oB7l-Dz5IWE1IvQP84d-GwTXjuEei4FdPlD6eKXMN5P3doTqsRRl2DWwMQ7DiOtm-WBGif5n-6jVBwNRQ3ONW0AI0&amp;t=ffffffffa0418512"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      var PageMethods = function () {
+        PageMethods.initializeBase(this);
+        this._timeout = 0;
+        this._userContext = null;
+        this._succeeded = null;
+        this._failed = null;
+      };
+      PageMethods.prototype = {
+        _get_path: function () {
+          var p = this.get_path();
+          if (p) return p;
+          else return PageMethods._staticInstance.get_path();
+        },
+        getTalukas: function (
+          id,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getTalukas",
+            false,
+            { id: id },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getVillages: function (
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getVillages",
+            false,
+            { did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getKnos: function (
+          ptxt,
+          vid,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getKnos",
+            false,
+            { ptxt: ptxt, vid: vid, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getSnos: function (
+          ptxt,
+          vid,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getSnos",
+            false,
+            { ptxt: ptxt, vid: vid, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getKnames: function (
+          ptxt,
+          vid,
+          opt,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getKnames",
+            false,
+            { ptxt: ptxt, vid: vid, opt: opt, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getSnames: function (
+          ptxt,
+          vid,
+          opt,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getSnames",
+            false,
+            { ptxt: ptxt, vid: vid, opt: opt, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        call8a: function (
+          kno,
+          vid,
+          dn,
+          tn,
+          vn,
+          did,
+          tid,
+          mno,
+          divisionName,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "call8a",
+            false,
+            {
+              kno: kno,
+              vid: vid,
+              dn: dn,
+              tn: tn,
+              vn: vn,
+              did: did,
+              tid: tid,
+              mno: mno,
+              divisionName: divisionName,
+            },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        callRORInterval: function (
+          mno,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "callRORInterval",
+            false,
+            { mno: mno },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        call712: function (
+          sno,
+          vid,
+          dn,
+          tn,
+          vn,
+          tc,
+          dc,
+          did,
+          tid,
+          mno,
+          Language,
+          divisionName,
+          LanguageName,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "call712",
+            false,
+            {
+              sno: sno,
+              vid: vid,
+              dn: dn,
+              tn: tn,
+              vn: vn,
+              tc: tc,
+              dc: dc,
+              did: did,
+              tid: tid,
+              mno: mno,
+              Language: Language,
+              divisionName: divisionName,
+              LanguageName: LanguageName,
+            },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getCTSOs: function (
+          id,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getCTSOs",
+            false,
+            { id: id },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getCTSOLink: function (
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getCTSOLink",
+            false,
+            { did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getCTSno: function (
+          ptxt,
+          vid,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getCTSno",
+            false,
+            { ptxt: ptxt, vid: vid, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getOWNER: function (
+          ptxt,
+          vid,
+          opt,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getOWNER",
+            false,
+            { ptxt: ptxt, vid: vid, opt: opt, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        callPC: function (
+          ctsno,
+          vid,
+          vname,
+          did,
+          tid,
+          mno,
+          dname,
+          tname,
+          Language,
+          divisionName,
+          LanguageName,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "callPC",
+            false,
+            {
+              ctsno: ctsno,
+              vid: vid,
+              vname: vname,
+              did: did,
+              tid: tid,
+              mno: mno,
+              dname: dname,
+              tname: tname,
+              Language: Language,
+              divisionName: divisionName,
+              LanguageName: LanguageName,
+            },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getASnos: function (
+          ptxt,
+          vid,
+          did,
+          tid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getASnos",
+            false,
+            { ptxt: ptxt, vid: vid, did: did, tid: tid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+        getDist: function (
+          divid,
+          succeededCallback,
+          failedCallback,
+          userContext
+        ) {
+          return this._invoke(
+            this._get_path(),
+            "getDist",
+            false,
+            { divid: divid },
+            succeededCallback,
+            failedCallback,
+            userContext
+          );
+        },
+      };
+      PageMethods.registerClass("PageMethods", Sys.Net.WebServiceProxy);
+      PageMethods._staticInstance = new PageMethods();
+      PageMethods.set_path = function (value) {
+        PageMethods._staticInstance.set_path(value);
+      };
+      PageMethods.get_path = function () {
+        return PageMethods._staticInstance.get_path();
+      };
+      PageMethods.set_timeout = function (value) {
+        PageMethods._staticInstance.set_timeout(value);
+      };
+      PageMethods.get_timeout = function () {
+        return PageMethods._staticInstance.get_timeout();
+      };
+      PageMethods.set_defaultUserContext = function (value) {
+        PageMethods._staticInstance.set_defaultUserContext(value);
+      };
+      PageMethods.get_defaultUserContext = function () {
+        return PageMethods._staticInstance.get_defaultUserContext();
+      };
+      PageMethods.set_defaultSucceededCallback = function (value) {
+        PageMethods._staticInstance.set_defaultSucceededCallback(value);
+      };
+      PageMethods.get_defaultSucceededCallback = function () {
+        return PageMethods._staticInstance.get_defaultSucceededCallback();
+      };
+      PageMethods.set_defaultFailedCallback = function (value) {
+        PageMethods._staticInstance.set_defaultFailedCallback(value);
+      };
+      PageMethods.get_defaultFailedCallback = function () {
+        return PageMethods._staticInstance.get_defaultFailedCallback();
+      };
+      PageMethods.set_enableJsonp = function (value) {
+        PageMethods._staticInstance.set_enableJsonp(value);
+      };
+      PageMethods.get_enableJsonp = function () {
+        return PageMethods._staticInstance.get_enableJsonp();
+      };
+      PageMethods.set_jsonpCallbackParameter = function (value) {
+        PageMethods._staticInstance.set_jsonpCallbackParameter(value);
+      };
+      PageMethods.get_jsonpCallbackParameter = function () {
+        return PageMethods._staticInstance.get_jsonpCallbackParameter();
+      };
+      PageMethods.set_path("Home.aspx");
+      PageMethods.getTalukas = function (id, onSuccess, onFailed, userContext) {
+        PageMethods._staticInstance.getTalukas(
+          id,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getVillages = function (
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getVillages(
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getKnos = function (
+        ptxt,
+        vid,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getKnos(
+          ptxt,
+          vid,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getSnos = function (
+        ptxt,
+        vid,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getSnos(
+          ptxt,
+          vid,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getKnames = function (
+        ptxt,
+        vid,
+        opt,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getKnames(
+          ptxt,
+          vid,
+          opt,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getSnames = function (
+        ptxt,
+        vid,
+        opt,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getSnames(
+          ptxt,
+          vid,
+          opt,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.call8a = function (
+        kno,
+        vid,
+        dn,
+        tn,
+        vn,
+        did,
+        tid,
+        mno,
+        divisionName,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.call8a(
+          kno,
+          vid,
+          dn,
+          tn,
+          vn,
+          did,
+          tid,
+          mno,
+          divisionName,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.callRORInterval = function (
+        mno,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.callRORInterval(
+          mno,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.call712 = function (
+        sno,
+        vid,
+        dn,
+        tn,
+        vn,
+        tc,
+        dc,
+        did,
+        tid,
+        mno,
+        Language,
+        divisionName,
+        LanguageName,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.call712(
+          sno,
+          vid,
+          dn,
+          tn,
+          vn,
+          tc,
+          dc,
+          did,
+          tid,
+          mno,
+          Language,
+          divisionName,
+          LanguageName,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getCTSOs = function (id, onSuccess, onFailed, userContext) {
+        PageMethods._staticInstance.getCTSOs(
+          id,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getCTSOLink = function (
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getCTSOLink(
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getCTSno = function (
+        ptxt,
+        vid,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getCTSno(
+          ptxt,
+          vid,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getOWNER = function (
+        ptxt,
+        vid,
+        opt,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getOWNER(
+          ptxt,
+          vid,
+          opt,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.callPC = function (
+        ctsno,
+        vid,
+        vname,
+        did,
+        tid,
+        mno,
+        dname,
+        tname,
+        Language,
+        divisionName,
+        LanguageName,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.callPC(
+          ctsno,
+          vid,
+          vname,
+          did,
+          tid,
+          mno,
+          dname,
+          tname,
+          Language,
+          divisionName,
+          LanguageName,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getASnos = function (
+        ptxt,
+        vid,
+        did,
+        tid,
+        onSuccess,
+        onFailed,
+        userContext
+      ) {
+        PageMethods._staticInstance.getASnos(
+          ptxt,
+          vid,
+          did,
+          tid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      PageMethods.getDist = function (divid, onSuccess, onFailed, userContext) {
+        PageMethods._staticInstance.getDist(
+          divid,
+          onSuccess,
+          onFailed,
+          userContext
+        );
+      };
+      //]]>
+    </script>
+
+    <div class="aspNetHidden">
+      <input
+        type="hidden"
+        name="__VIEWSTATEGENERATOR"
+        id="__VIEWSTATEGENERATOR"
+        value="320A8A76"
+      />
+      <input
+        type="hidden"
+        name="__EVENTVALIDATION"
+        id="__EVENTVALIDATION"
+        value="ZxCO6AZhJ//VpOF2SQUhBdN1HvoVP0jn4xoboRNGbmE2xGDSV2Rqd+j5j8lLi2BvO5mHe8tmDfvZau6WhQzPo7FWw3swn2Irvwu75f6m1C5OWgh1da3sl3/fyIARJGRTGNifQmX1oLD0VBnBA7+74746nz0="
+      />
+    </div>
+    <div class="header">
+      <img id="img1" src="IMAGES/header.png" />
+      <div id="ctl00_divmain" class="menubar">
+        <ul>
+          <li style="float: left; margin-left: 50px">
+            <marquee
+              scrollamount="3.5"
+              style="text-shadow: none; width: 615px; float: right"
+            >
+              <span
+                id="ctl00_lblMessage"
+                style="color: Black; font-family: arial; font-size: Small"
+                >MAHA Bhulekh (i.e. Maharashtra Bhumi Abhilekh) - a land record
+                website of Maharashtra state (India) that provides 7/12 extract,
+                8A extract and Property Card online to citizens</span
+              ></marquee
+            >
+          </li>
+          <li id="ctl00_MainText" style="font-size: small; margin-top: 0px">
+            <a href="https://bhulekh.mahabhumi.gov.in/format2/">मुख्यपृष्ठ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <script type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager._initialize(
+          "ctl00$ScriptManager1",
+          "aspnetForm",
+          [],
+          [],
+          [],
+          90,
+          "ctl00"
+        );
+        //]]>
+      </script>
+
+      <div class="page">
+        <input type="hidden" id="param" name="param" value="6" />
+        <div class="content-wrapper ng-scope" ng-controller="distCtrl">
+          <div ng-show="loading" class="ng-hide">
+            <div class="modal"></div>
+            <div class="loading" align="center">
+              <img src="Images/loader.gif" alt="" />
+              <p>Loading..... Please wait.</p>
+              <p>लोड करीत आहे ..... कृपया प्रतीक्षा करा.</p>
+            </div>
+          </div>
+          <div class="img-sec">
+            <img src="Images/div_map.jpg" width="100%" />
+          </div>
+          <div class="tab-sec">
+            <p>
+              <b>
+                <label
+                  ng-model="divisionName"
+                  id="divisionName"
+                  class="ng-pristine ng-untouched ng-valid ng-not-empty"
+                  >पुणे विभाग</label
+                >
+              </b>
+            </p>
+            <p>
+              <input
+                id="rb712"
+                type="radio"
+                name="ror"
+                ng-model="ror"
+                value="712"
+                ng-init="ror=712"
+                class="ng-pristine ng-untouched ng-valid ng-not-empty"
+              />
+              <label for="rb712">७/१२</label>
+              <input
+                id="rb8a"
+                type="radio"
+                name="ror"
+                ng-model="ror"
+                value="8a"
+                class="ng-pristine ng-untouched ng-valid ng-not-empty"
+              />
+              <label for="rb8a">८अ</label>
+              <input
+                value="pc"
+                name="ctl00$ContentPlaceHolder1$ror"
+                type="radio"
+                id="ctl00_ContentPlaceHolder1_rbpc"
+                ng-model="ror"
+                class="ng-pristine ng-untouched ng-valid ng-not-empty"
+              />
+              <label id="ctl00_ContentPlaceHolder1_lblrbpc" for="rbpc"
+                >मालमत्ता पत्रक</label
+              >
+            </p>
+
+            <div>
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td class="label-column">
+                      <label>जिल्हा / District</label>
+                    </td>
+                    <td class="select-column">
+                      <select
+                        id="distSelect"
+                        ng-model="distCode"
+                        ng-show="ror!='pc'"
+                        ng-options="v as t for (v,t) in names"
+                        ng-change="changedDist()"
+                        class="select-list ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched"
+                      >
+                        <option value="" selected="selected" class="">
+                          जिल्हा निवडा
+                        </option>
+                        <option label="पुणे" value="string:25">पुणे</option>
+                        <option label="सोलापूर" value="string:30">
+                          सोलापूर
+                        </option>
+                        <option label="सातारा" value="string:31">सातारा</option>
+                        <option label="कोल्हापूर" value="string:34">
+                          कोल्हापूर
+                        </option>
+                        <option label="सांगली" value="string:35">सांगली</option>
+                      </select>
+
+                      <select
+                        id="distSelect1"
+                        ng-model="distCode"
+                        ng-show="ror=='pc'"
+                        ng-options="v as t for (v,t) in names "
+                        ng-change="changedDist()"
+                        class="select-list ng-pristine ng-untouched ng-valid ng-hide ng-not-empty"
+                      >
+                        <option value="" selected="selected" class="">
+                          जिल्हा निवडा
+                        </option>
+                        <option
+                          label="पुणे"
+                          value="string:25"
+                          selected="selected"
+                        >
+                          पुणे
+                        </option>
+                        <option label="सोलापूर" value="string:30">
+                          सोलापूर
+                        </option>
+                        <option label="सातारा" value="string:31">सातारा</option>
+                        <option label="कोल्हापूर" value="string:34">
+                          कोल्हापूर
+                        </option>
+                        <option label="सांगली" value="string:35">सांगली</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label-column">
+                      <label ng-show="distCode != null" class="">तालुका</label>
+                      <label
+                        ng-show="distCode != null &amp;&amp; ror == 'pc'"
+                        class="ng-hide"
+                        >/न.भु.का. <br />
+                      </label>
+                      <label ng-show="distCode != null" class=""
+                        >/ Taluka</label
+                      >
+                    </td>
+                    <td class="select-column">
+                      <select
+                        id="talSelect"
+                        ng-show="ror!='pc' &amp;&amp; distCode != null"
+                        ng-model="talCode"
+                        ng-options="tname.talukacode as tname.dtname for tname in tnames "
+                        ng-change="changedTal()"
+                        class="select-list ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched"
+                      >
+                        <option value="" selected="selected" class="">
+                          तालुका निवडा
+                        </option>
+                        <option label="आंबेगाव" value="number:2">
+                          आंबेगाव
+                        </option>
+                        <option label="ईंदापुर" value="number:14">
+                          ईंदापुर
+                        </option>
+                        <option label="खेड" value="number:4">खेड</option>
+                        <option label="जुन्नर" value="number:1">जुन्नर</option>
+                        <option label="दौंड" value="number:9">दौंड</option>
+                        <option label="पुणे शहर" value="number:8">
+                          पुणे शहर
+                        </option>
+                        <option label="पुरंदर" value="number:10">पुरंदर</option>
+                        <option label="बारामती" value="number:13">
+                          बारामती
+                        </option>
+                        <option label="भोर" value="number:12">भोर</option>
+                        <option label="मावळ" value="number:5">मावळ</option>
+                        <option label="मुळ्शी" value="number:6">मुळ्शी</option>
+                        <option label="वेल्हा" value="number:11">वेल्हा</option>
+                        <option label="शिरुर" value="number:3">शिरुर</option>
+                        <option label="हवेली" value="number:7">हवेली</option>
+                      </select>
+                      <select
+                        id="talSelect1"
+                        ng-show="ror=='pc' &amp;&amp; distCode != null"
+                        ng-model="talCode"
+                        ng-options="tname.off_code_100 as tname.off_name_100 for tname in tnames "
+                        ng-change="changedTal()"
+                        class="select-list ng-pristine ng-untouched ng-valid ng-hide ng-not-empty"
+                      >
+                        <option value="" selected="selected" class="">
+                          तालुका निवडा
+                        </option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label-column">
+                      <label ng-show="talCode != null" class="">गाव </label>
+                      <label
+                        ng-show="talCode != null  &amp;&amp; ror == 'pc'"
+                        class="ng-hide"
+                        >/गावपेठ </label
+                      ><label ng-show="talCode != null" class="">
+                        / Village</label
+                      >
+                    </td>
+                    <td class="select-column">
+                      <select
+                        id="vilSelect"
+                        ng-show="ror!='pc' &amp;&amp; talCode != null"
+                        ng-model="vilCode"
+                        ng-options="vname.ccode as vname.village_name for vname in vnames"
+                        class="select-list ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched"
+                        ng-change="changedVil()"
+                      >
+                        <option value="" selected="selected" class="">
+                          गाव निवडा
+                        </option>
+                        <option
+                          label="आस्करवाडी"
+                          value="string:272500100312730000"
+                        >
+                          आस्करवाडी
+                        </option>
+                        <option label="आंबळे" value="string:272500100313020000">
+                          आंबळे
+                        </option>
+                        <option
+                          label="आंबोडी"
+                          value="string:272500100312840000"
+                        >
+                          आंबोडी
+                        </option>
+                        <option
+                          label="उदाचीवाडी"
+                          value="string:272500100312830000"
+                        >
+                          उदाचीवाडी
+                        </option>
+                        <option
+                          label="एखतपुर"
+                          value="string:272500100313290000"
+                        >
+                          एखतपुर
+                        </option>
+                        <option
+                          label="कर्नलवाडी"
+                          value="string:272500100313740000"
+                        >
+                          कर्नलवाडी
+                        </option>
+                        <option
+                          label="काळदरी"
+                          value="string:272500100313520000"
+                        >
+                          काळदरी
+                        </option>
+                        <option
+                          label="काळेवाडी"
+                          value="string:272500100312800000"
+                        >
+                          काळेवाडी
+                        </option>
+                        <option
+                          label="कुंभारवळण"
+                          value="string:272500100313130000"
+                        >
+                          कुंभारवळण
+                        </option>
+                        <option
+                          label="कुंभोशी"
+                          value="string:272500100313510000"
+                        >
+                          कुंभोशी
+                        </option>
+                        <option
+                          label="केतकावळे"
+                          value="string:272500100313500000"
+                        >
+                          केतकावळे
+                        </option>
+                        <option
+                          label="कोडीत खुर्द"
+                          value="string:272500100312930000"
+                        >
+                          कोडीत खुर्द
+                        </option>
+                        <option
+                          label="कोडीत बुद्रुक"
+                          value="string:272500100312940000"
+                        >
+                          कोडीत बुद्रुक
+                        </option>
+                        <option label="कोथळे" value="string:272500100313170000">
+                          कोथळे
+                        </option>
+                        <option
+                          label="कोळविहिरे"
+                          value="string:272500100313660000"
+                        >
+                          कोळविहिरे
+                        </option>
+                        <option label="खळद" value="string:272500100313280000">
+                          खळद
+                        </option>
+                        <option
+                          label="खानवडी"
+                          value="string:272500100313150000"
+                        >
+                          खानवडी
+                        </option>
+                        <option
+                          label="खेंगरेवाडी"
+                          value="string:272500100313420000"
+                        >
+                          खेंगरेवाडी
+                        </option>
+                        <option label="गराडे" value="string:272500100312890000">
+                          गराडे
+                        </option>
+                        <option
+                          label="गुऱ्होळी"
+                          value="string:272500100312980000"
+                        >
+                          गुऱ्होळी
+                        </option>
+                        <option
+                          label="गुळूंचे"
+                          value="string:272500100313750000"
+                        >
+                          गुळूंचे
+                        </option>
+                        <option
+                          label="घेरापुरंदर"
+                          value="string:272500100313480000"
+                        >
+                          घेरापुरंदर
+                        </option>
+                        <option
+                          label="चांबळी"
+                          value="string:272500100312770000"
+                        >
+                          चांबळी
+                        </option>
+                        <option
+                          label="चिव्हेवाडी"
+                          value="string:272500100313350000"
+                        >
+                          चिव्हेवाडी
+                        </option>
+                        <option
+                          label="जवळार्जुन"
+                          value="string:272500100313200000"
+                        >
+                          जवळार्जुन
+                        </option>
+                        <option
+                          label="जाधववाडी"
+                          value="string:272500100312780000"
+                        >
+                          जाधववाडी
+                        </option>
+                        <option label="जेऊर" value="string:272500100313790000">
+                          जेऊर
+                        </option>
+                        <option
+                          label="जेजुरी"
+                          value="string:272500104252200000"
+                        >
+                          जेजुरी
+                        </option>
+                        <option
+                          label="झेंडेवाडी"
+                          value="string:272500100312790000"
+                        >
+                          झेंडेवाडी
+                        </option>
+                        <option
+                          label="टेकवडी"
+                          value="string:272500100313040000"
+                        >
+                          टेकवडी
+                        </option>
+                        <option
+                          label="तक्रारवाडी"
+                          value="string:272500100313310000"
+                        >
+                          तक्रारवाडी
+                        </option>
+                        <option label="तोंडल" value="string:272500100313600000">
+                          तोंडल
+                        </option>
+                        <option
+                          label="थापेवाडी"
+                          value="string:272500100312900000"
+                        >
+                          थापेवाडी
+                        </option>
+                        <option
+                          label="थोपटेवाडी"
+                          value="string:272500100313760000"
+                        >
+                          थोपटेवाडी
+                        </option>
+                        <option
+                          label="दवणेवाडी"
+                          value="string:272500100313450000"
+                        >
+                          दवणेवाडी
+                        </option>
+                        <option label="दिवे" value="string:272500100312860000">
+                          दिवे
+                        </option>
+                        <option label="देवडी" value="string:272500100313340000">
+                          देवडी
+                        </option>
+                        <option
+                          label="देवमळा"
+                          value="string:272500104252200001"
+                        >
+                          देवमळा
+                        </option>
+                        <option label="दौंडज" value="string:272500100313650000">
+                          दौंडज
+                        </option>
+                        <option
+                          label="धनकवडी"
+                          value="string:272500100313530000"
+                        >
+                          धनकवडी
+                        </option>
+                        <option
+                          label="धालेवाडी"
+                          value="string:272500100313240000"
+                        >
+                          धालेवाडी
+                        </option>
+                        <option
+                          label="नाझरे कडे पठार"
+                          value="string:272500100313220000"
+                        >
+                          नाझरे कडे पठार
+                        </option>
+                        <option
+                          label="नाझरे सुपे"
+                          value="string:272500100313210000"
+                        >
+                          नाझरे सुपे
+                        </option>
+                        <option
+                          label="नायगाव"
+                          value="string:272500100313100000"
+                        >
+                          नायगाव
+                        </option>
+                        <option label="नावळी" value="string:272500100313680000">
+                          नावळी
+                        </option>
+                        <option
+                          label="निरा - शिवतक्रार"
+                          value="string:272500104252300000"
+                        >
+                          निरा - शिवतक्रार
+                        </option>
+                        <option
+                          label="निळुंज"
+                          value="string:272500100313260000"
+                        >
+                          निळुंज
+                        </option>
+                        <option
+                          label="पठारवाडी"
+                          value="string:272500100312740000"
+                        >
+                          पठारवाडी
+                        </option>
+                        <option
+                          label="परिंचे"
+                          value="string:272500100313560000"
+                        >
+                          परिंचे
+                        </option>
+                        <option
+                          label="पवारवाडी"
+                          value="string:272500100312870000"
+                        >
+                          पवारवाडी
+                        </option>
+                        <option
+                          label="पानवडी"
+                          value="string:272500100313360000"
+                        >
+                          पानवडी
+                        </option>
+                        <option
+                          label="पारगाव"
+                          value="string:272500100313000000"
+                        >
+                          पारगाव
+                        </option>
+                        <option
+                          label="पांगारे"
+                          value="string:272500100313400000"
+                        >
+                          पांगारे
+                        </option>
+                        <option
+                          label="पांडेश्वर"
+                          value="string:272500100313190000"
+                        >
+                          पांडेश्वर
+                        </option>
+                        <option
+                          label="पिसर्वे"
+                          value="string:272500100313110000"
+                        >
+                          पिसर्वे
+                        </option>
+                        <option
+                          label="पिसुर्टी"
+                          value="string:272500100313770000"
+                        >
+                          पिसुर्टी
+                        </option>
+                        <option label="पिसे" value="string:272500100313070000">
+                          पिसे
+                        </option>
+                        <option
+                          label="पिंगोरी"
+                          value="string:272500100313640000"
+                        >
+                          पिंगोरी
+                        </option>
+                        <option
+                          label="पिंपरी"
+                          value="string:272500100313180000"
+                        >
+                          पिंपरी
+                        </option>
+                        <option
+                          label="पिंपरे खुर्द"
+                          value="string:272500100313800000"
+                        >
+                          पिंपरे खुर्द
+                        </option>
+                        <option
+                          label="पिंपळे"
+                          value="string:272500100313390000"
+                        >
+                          पिंपळे
+                        </option>
+                        <option label="पुर" value="string:272500100312960000">
+                          पुर
+                        </option>
+                        <option label="पोखर" value="string:272500100312970000">
+                          पोखर
+                        </option>
+                        <option label="पोंढे" value="string:272500100313060000">
+                          पोंढे
+                        </option>
+                        <option
+                          label="बहिरवाडी"
+                          value="string:272500100313470000"
+                        >
+                          बहिरवाडी
+                        </option>
+                        <option
+                          label="बांदलवाडी"
+                          value="string:272500100313460000"
+                        >
+                          बांदलवाडी
+                        </option>
+                        <option label="बेलसर" value="string:272500100313250000">
+                          बेलसर
+                        </option>
+                        <option
+                          label="बोपगाव"
+                          value="string:272500100312760000"
+                        >
+                          बोपगाव
+                        </option>
+                        <option
+                          label="बोऱ्हाळवाडी"
+                          value="string:272500100313380000"
+                        >
+                          बोऱ्हाळवाडी
+                        </option>
+                        <option label="भिवडी" value="string:272500100312950000">
+                          भिवडी
+                        </option>
+                        <option label="भिवरी" value="string:272500100312750000">
+                          भिवरी
+                        </option>
+                        <option
+                          label="भोसलेवाडी"
+                          value="string:272500100313160000"
+                        >
+                          भोसलेवाडी
+                        </option>
+                        <option
+                          label="माळशिरस"
+                          value="string:272500100313050000"
+                        >
+                          माळशिरस
+                        </option>
+                        <option
+                          label="मावडी कडेपठार"
+                          value="string:272500100313670000"
+                        >
+                          मावडी कडेपठार
+                        </option>
+                        <option
+                          label="मावडी सुपे"
+                          value="string:272500100313120000"
+                        >
+                          मावडी सुपे
+                        </option>
+                        <option label="माहूर" value="string:272500100313550000">
+                          माहूर
+                        </option>
+                        <option
+                          label="मांडकी"
+                          value="string:272500100313780000"
+                        >
+                          मांडकी
+                        </option>
+                        <option label="मांढर" value="string:272500100313540000">
+                          मांढर
+                        </option>
+                        <option
+                          label="मिसाळवाडी"
+                          value="string:272500100313490000"
+                        >
+                          मिसाळवाडी
+                        </option>
+                        <option
+                          label="मुंजवडी"
+                          value="string:272500100313140000"
+                        >
+                          मुंजवडी
+                        </option>
+                        <option label="राख" value="string:272500100313690000">
+                          राख
+                        </option>
+                        <option
+                          label="राजुरी"
+                          value="string:272500100313090000"
+                        >
+                          राजुरी
+                        </option>
+                        <option
+                          label="राजेवाडी"
+                          value="string:272500100313030000"
+                        >
+                          राजेवाडी
+                        </option>
+                        <option
+                          label="रानमळा"
+                          value="string:272500100313230000"
+                        >
+                          रानमळा
+                        </option>
+                        <option label="रिसे" value="string:272500100313080000">
+                          रिसे
+                        </option>
+                        <option
+                          label="वनपुरी"
+                          value="string:272500100312820000"
+                        >
+                          वनपुरी
+                        </option>
+                        <option
+                          label="वाघापुर"
+                          value="string:272500100313010000"
+                        >
+                          वाघापुर
+                        </option>
+                        <option
+                          label="वारवडी"
+                          value="string:272500100312910000"
+                        >
+                          वारवडी
+                        </option>
+                        <option
+                          label="वाल्हे"
+                          value="string:272500100313720000"
+                        >
+                          वाल्हे
+                        </option>
+                        <option
+                          label="वाळुंज"
+                          value="string:272500100313270000"
+                        >
+                          वाळुंज
+                        </option>
+                        <option label="वीर" value="string:272500100313610000">
+                          वीर
+                        </option>
+                        <option label="शिवरी" value="string:272500100313300000">
+                          शिवरी
+                        </option>
+                        <option
+                          label="शिंदेवाडी"
+                          value="string:272500100313410000"
+                        >
+                          शिंदेवाडी
+                        </option>
+                        <option
+                          label="साकुर्डे"
+                          value="string:272500100313320000"
+                        >
+                          साकुर्डे
+                        </option>
+                        <option label="सासवड" value="string:272500104252100000">
+                          सासवड
+                        </option>
+                        <option
+                          label="सिंगापुर"
+                          value="string:272500100312990000"
+                        >
+                          सिंगापुर
+                        </option>
+                        <option
+                          label="सुपे खुर्द"
+                          value="string:272500100313370000"
+                        >
+                          सुपे खुर्द
+                        </option>
+                        <option
+                          label="सोनोरी"
+                          value="string:272500100312810000"
+                        >
+                          सोनोरी
+                        </option>
+                        <option
+                          label="सोमुर्डी"
+                          value="string:272500100312920000"
+                        >
+                          सोमुर्डी
+                        </option>
+                        <option
+                          label="स्टेशननगर"
+                          value="string:272500104252200002"
+                        >
+                          स्टेशननगर
+                        </option>
+                        <option
+                          label="हरगुडे"
+                          value="string:272500100313440000"
+                        >
+                          हरगुडे
+                        </option>
+                        <option label="हरणी" value="string:272500100313570000">
+                          हरणी
+                        </option>
+                        <option label="हिवरे" value="string:272500100312880000">
+                          हिवरे
+                        </option>
+                      </select>
+                      <select
+                        id="vilSelect1"
+                        ng-show="ror=='pc' &amp;&amp; talCode != null"
+                        ng-model="vilCode"
+                        ng-options="vname.vill_code_140 as vname.vill_name_140 for vname in vnames"
+                        class="select-list ng-pristine ng-untouched ng-valid ng-hide ng-not-empty"
+                        ng-change="changedVil()"
+                      >
+                        <option value="" selected="selected" class="">
+                          गावपेठ निवडा
+                        </option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                        <option
+                          label="undefined"
+                          value="undefined:undefined"
+                        ></option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br />
+              <div ng-show="ror == '712' &amp;&amp;  vilCode != null" class="">
+                <table width="95%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label>शोध :</label>
+                      </td>
+                      <td>
+                        <input
+                          id="rbsryno"
+                          type="radio"
+                          name="712opt"
+                          ng-model="opt712"
+                          value="sryno"
+                          ng-change="opt712change()"
+                          class="ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched"
+                        />
+                        <label for="rbsryno">सर्वे नंबर / गट नंबर</label>
+                        <input
+                          id="rbasryno"
+                          type="radio"
+                          name="712opt"
+                          ng-model="opt712"
+                          value="asryno"
+                          ng-change="opt712change()"
+                          class="ng-pristine ng-untouched ng-valid ng-not-empty"
+                        />
+                        <label for="rbasryno"
+                          >अक्षरी सर्वे नंबर / गट नंबर</label
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <input
+                          id="rb712fn"
+                          type="radio"
+                          name="712opt"
+                          ng-model="opt712"
+                          value="712fn"
+                          ng-change="opt712change()"
+                          class="ng-pristine ng-untouched ng-valid ng-not-empty"
+                        />
+                        <label for="rb712fn">पहिले नाव</label>
+                        <input
+                          id="rb712mn"
+                          type="radio"
+                          name="712opt"
+                          ng-model="opt712"
+                          value="712mn"
+                          ng-change="opt712change()"
+                          class="ng-pristine ng-untouched ng-valid ng-not-empty"
+                        />
+                        <label for="rb712mn">मधील नाव</label>
+                        <input
+                          id="rb712ln"
+                          type="radio"
+                          name="712opt"
+                          ng-model="opt712"
+                          value="712ln"
+                          ng-change="opt712change()"
+                          class="ng-pristine ng-untouched ng-valid ng-not-empty"
+                        />
+                        <label for="rb712ln">आडनाव</label>
+                        <input
+                          id="rb712an"
+                          type="radio"
+                          name="712opt"
+                          ng-model="opt712"
+                          value="712an"
+                          class="ng-pristine ng-untouched ng-valid ng-not-empty"
+                        />
+                        <label for="rb712an">संपूर्ण नाव</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                ng-show="ror == '8a' &amp;&amp;  vilCode != null"
+                class="ng-hide"
+              >
+                <table width="95%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label>शोध :</label>
+                      </td>
+                      <td>
+                        <input
+                          id="rbkn"
+                          type="radio"
+                          name="8aopt"
+                          ng-model="opt8a"
+                          value="kn"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rbkn">खाता नंबर</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <input
+                          id="rb8afn"
+                          type="radio"
+                          name="8aopt"
+                          ng-model="opt8a"
+                          value="8afn"
+                          ng-change="opt8achange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rb8afn">पहिले नाव</label>
+                        <input
+                          id="rb8amn"
+                          type="radio"
+                          name="8aopt"
+                          ng-model="opt8a"
+                          value="8amn"
+                          ng-change="opt8achange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rb8amn">मधील नाव</label>
+                        <input
+                          id="rb8aln"
+                          type="radio"
+                          name="8aopt"
+                          ng-model="opt8a"
+                          value="8aln"
+                          ng-change="opt8achange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rb8aln">आडनाव</label>
+                        <input
+                          id="rb8aan"
+                          type="radio"
+                          name="8aopt"
+                          ng-model="opt8a"
+                          value="8aan"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rb8aan">संपूर्ण नाव</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                ng-show="ror == 'pc' &amp;&amp;  vilCode != null"
+                class="ng-hide"
+              >
+                <table width="95%">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label>शोध:</label>
+                      </td>
+
+                      <td>
+                        <input
+                          id="rbctsno"
+                          type="radio"
+                          name="propt"
+                          ng-model="optpr"
+                          value="cts"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rbkn">CTS No. /न. भु.क्र</label>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td>
+                        <input
+                          id="rbprfn"
+                          type="radio"
+                          name="propt"
+                          ng-model="optpr"
+                          value="prfn"
+                          ng-change="optprchange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rbprfn">पहिले नाव</label>
+                        <input
+                          id="rbprmn"
+                          type="radio"
+                          name="propt"
+                          ng-model="optpr"
+                          value="prmn"
+                          ng-change="optprchange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rbprmn">मधील नाव</label>
+                        <input
+                          id="rbprln"
+                          type="radio"
+                          name="propt"
+                          ng-model="optpr"
+                          value="prln"
+                          ng-change="optprchange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rbprln">आडनाव</label>
+                        <input
+                          id="rbpran"
+                          type="radio"
+                          name="propt"
+                          ng-model="optpr"
+                          value="pran"
+                          ng-change="optprchange()"
+                          class="ng-pristine ng-untouched ng-valid ng-empty"
+                        />
+                        <label for="rbpran">नाव शोधा</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength ng-hide"
+                          type="number"
+                          ng-model="CtsNo"
+                          ng-maxlength="250"
+                          ng-change="ctsChange()"
+                          ng-show="optpr == 'cts'"
+                        />
+
+                        <input
+                          type="button"
+                          value="न.भु.क्र शोधा"
+                          ng-show="(CtsNo != null &amp;&amp; CtsNo != '')"
+                          ng-click="searchCTS()"
+                          class="ng-hide"
+                        />
+
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-hide"
+                          type="text"
+                          ng-model="OWNER"
+                          ng-show="optpr == 'prfn' || optpr == 'prmn' || optpr == 'prln' || optpr == 'pran'"
+                          ng-change="OWNERChange()"
+                          ng-pattern="/^[a-zA-Z]*$/"
+                        />
+
+                        <input
+                          type="button"
+                          value="नाव शोधा"
+                          ng-show="(OWNER != null &amp;&amp; OWNER != '')"
+                          ng-click="searchOWNER()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedctsno"
+                          style="
+                            margin-bottom: 2%;
+                            width: 240px;
+                            margin-top: 1%;
+                          "
+                          ng-show="CtsNo != null &amp;&amp; CtsNo != '' &amp;&amp; CtsNoData.length>0"
+                          ng-change="showMobile()"
+                          ng-options="value.csno  as value.csno for value in CtsNoData"
+                        >
+                          <option value="" selected="selected" class="">
+                            CTS NO/न.भु.क्र. निवडा
+                          </option>
+                        </select>
+
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedOWNER"
+                          style="
+                            margin-bottom: 2%;
+                            width: 240px;
+                            margin-top: 1%;
+                          "
+                          ng-show="OWNER != null &amp;&amp; OWNER != '' &amp;&amp; OWNERData.length>0"
+                          ng-change="showMobile()"
+                          ng-options="value.new_cts_numb_2100  as value.owner_nm_2100 for value in OWNERData"
+                        >
+                          <option value="" selected="selected" class="">
+                            नाव निवडा
+                          </option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <label
+                          ng-show="selectedctsno != null"
+                          id="lblLang"
+                          class="ng-hide"
+                          >भाषा निवडा:
+                        </label>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-hide ng-not-empty"
+                          id="SelectLang"
+                          name="SelectLang"
+                          ng-model="selectedctLang"
+                          style="
+                            margin-bottom: 2%;
+                            width: 240px;
+                            margin-top: 1%;
+                          "
+                          ng-show="CtsNo != null &amp;&amp; CtsNo != '' &amp;&amp; CtsNoData.length>0 &amp;&amp; selectedctsno != null"
+                        >
+                          <option
+                            class="dropdown-item"
+                            disabled=""
+                            value="undefined"
+                          >
+                            Select Language
+                          </option>
+                          <option value="mr_in">Marathi</option>
+                          <option value="en_in">English</option>
+                          <option value="hi_in">Hindi</option>
+                          <option value="bn_in">Bengali</option>
+                          <option value="gj_in">Gujarati</option>
+                          <option value="pn_in">Punjabi</option>
+                          <option value="ml_in">Malayalam</option>
+                          <option value="tm_in">Tamil</option>
+                          <option value="tl_in">Telugu</option>
+                          <option value="kn_in">Kannada</option>
+                          <option value="or_in">Oriya</option>
+                          <option value="ur_in">Urdu</option>
+                          <option value="as_in">Assamese</option>
+                          <option value="mn_in">Manipuri(Assamese)</option>
+                          <option value="ni_in">Nepali</option>
+                          <option value="ko_in">Konkani</option>
+                          <option value="mi_in">Maithili(Devanagri)</option>
+                          <option value="di_in">Dogri</option>
+                          <option value="bo_in">Bodo</option>
+                          <option value="st_in">Santhali(Devanagri)</option>
+                          <option value="sd_in">Sindhi(Devanagri)</option>
+                          <option value="ks_in">Kashmiri(Devanagri)</option>
+                          <option value="ks.pa_in">
+                            Kashmiri(Perso Arabic)
+                          </option>
+                          <option value="sk_in">Sanskrit</option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td></td>
+                      <td style="width: 100%; text-align: center">
+                        <label
+                          style="font-size: 11px"
+                          ng-show="selectedctsno != null"
+                          class="ng-hide"
+                          >नोंदणीसाठी आपला १० अंकी मोबाईल नंबर खाली भरा.</label
+                        ><br />
+                        <label ng-show="selectedctsno != null " class="ng-hide"
+                          >मोबाईल:
+                        </label>
+                        <input
+                          type="number"
+                          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                          maxlength="10"
+                          minlength="10"
+                          style="width: 40%; margin-top: 2%; margin-bottom: 2%"
+                          ng-model="mobile_number"
+                          name="mobile_number"
+                          onkeypress="return IsNumeric(event);"
+                          ng-show="selectedctsno != null "
+                          ng-pattern="/^[6-9][0-9]{9}$/"
+                          required=""
+                          class="ng-pristine ng-untouched ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-hide ng-not-empty ng-valid ng-valid-required"
+                        />
+                        <span
+                          style="color: red; margin-left: 30%"
+                          ng-show="myForm2.mobile_number.$error.pattern"
+                          class="ng-hide"
+                          >Please enter valid number!</span
+                        >
+
+                        <label
+                          style="font-size: 11px"
+                          ng-show="selectedOWNER != null "
+                          class="ng-hide"
+                          >नोंदणीसाठी आपला १० अंकी मोबाईल नंबर खाली भरा.</label
+                        ><br />
+                        <label ng-show="selectedOWNER != null " class="ng-hide"
+                          >मोबाईल:
+                        </label>
+                        <input
+                          type="number"
+                          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                          maxlength="10"
+                          minlength="10"
+                          style="width: 40%; margin-top: 2%; margin-bottom: 2%"
+                          ng-model="mobile_number"
+                          name="mobile_number"
+                          onkeypress="return IsNumeric(event);"
+                          ng-show="selectedOWNER != null "
+                          ng-pattern="/^[6-9][0-9]{9}$/"
+                          required=""
+                          class="ng-pristine ng-untouched ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-hide ng-not-empty ng-valid ng-valid-required"
+                        />
+                        <span
+                          style="color: red; margin-left: 30%"
+                          ng-show="myForm2.mobile_number.$error.pattern"
+                          class="ng-hide"
+                          ><br />
+                          Please enter valid number!</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td style="width: 100%; text-align: center">
+                        <input
+                          type="button"
+                          value="मालमत्ता पत्रक पहा"
+                          ng-show="selectedctsno != null &amp;&amp; CtsNo != null &amp;&amp; CtsNo != '' &amp;&amp; mobile_number!= null"
+                          ng-click="showPC()"
+                          class="ng-hide"
+                        />
+                        <input
+                          type="button"
+                          value="मालमत्ता पत्रक पहा"
+                          ng-show="selectedOWNER != null &amp;&amp; OWNER != null &amp;&amp; OWNER != '' &amp;&amp; mobile_number!= null"
+                          ng-click="showOWNERPC()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                ng-show="ror == '712' &amp;&amp;  vilCode != null &amp;&amp; opt712 != null"
+                class=""
+              >
+                <table width="95%">
+                  <tbody>
+                    <tr>
+                      <td class="input-text-column">
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-valid ng-valid-maxlength ng-not-empty ng-dirty ng-valid-number ng-touched"
+                          type="number"
+                          ng-model="sno"
+                          ng-maxlength="250"
+                          ng-show="opt712 == 'sryno'||opt712 == 'asryno'"
+                          ng-change="snoChange()"
+                        />
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-hide"
+                          type="text"
+                          ng-model="name712"
+                          ng-show="opt712 == '712fn' || opt712 == '712mn' || opt712 == '712ln'"
+                          ng-change="name712Change()"
+                          ng-pattern="/^[a-zA-Z]*$/"
+                        />
+
+                        <input
+                          style="visibility: hidden"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-hide"
+                          type="text"
+                          ng-model="asno"
+                          ng-show="opt712 =='asryno'"
+                          ng-change="snoChange()"
+                          ng-pattern="/^[0-9a-zA-Z/ -]+$/"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="button"
+                          value="शोधा"
+                          ng-show="(sno != null &amp;&amp; sno != '') || (name712 != null &amp;&amp; name712 != '')"
+                          ng-click="searchS()"
+                          class=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="input-text-column">
+                        <label
+                          ng-show="sRange != null"
+                          class="ng-binding ng-hide"
+                          >गावातील एकूण नावे :[] :
+                        </label>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedSRange"
+                          ng-show="sRange != null "
+                          ng-options="srange.id as srange.range for srange in sRange"
+                          ng-change="showASNames()"
+                        >
+                          <option selected="selected"></option>
+                        </select>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="input-text-column">
+                        <select
+                          class="input-text ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched"
+                          ng-model="selectedSno"
+                          ng-show="snos != null &amp;&amp; sno != null &amp;&amp; sno != ''"
+                          style="
+                            margin-bottom: 2%;
+                            width: 240px;
+                            margin-left: 1%;
+                          "
+                          ng-change="showMobile()"
+                          ng-options="sno.snov as sno.sno for sno in snos"
+                        >
+                          <option value="" selected="selected" class="">
+                            सर्वे नंबर/गट नंबर निवडा
+                          </option>
+                          <option label="1" value="string:1########">1</option>
+                        </select>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedASno"
+                          ng-show="asnos != null"
+                          style="margin-bottom: 2%; width: 240px"
+                          ng-change="showMobile()"
+                          ng-options="asno.snov as asno.sno for asno in asnos"
+                        >
+                          <option value="" selected="selected" class="">
+                            अक्षरी सर्वे नंबर/गट नंबर निवडा
+                          </option>
+                        </select>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedSname"
+                          ng-show="rsnames != null "
+                          ng-change="showMobile()"
+                          ng-options="sname.surveypins as sname.fullname for sname in rsnames"
+                        >
+                          <option selected="selected"></option>
+                        </select>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedSname"
+                          ng-show="snames != null &amp;&amp; (name712 != null &amp;&amp; name712 != '')"
+                          style="margin-bottom: 2%; width: 240px"
+                          ng-change="showMobile()"
+                          ng-options="sname.surveypins as sname.fullname for sname in snames"
+                        >
+                          <option selected="selected"></option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <label
+                          ng-show="selectedSno != null || selectedASno != null || selectedSname != null"
+                          id="lblLang"
+                          class=""
+                          >भाषा निवडा:
+                        </label>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-not-empty"
+                          id="SelectLang"
+                          name="SelectLang"
+                          ng-model="selectedctLang"
+                          style="
+                            margin-bottom: 2%;
+                            width: 240px;
+                            margin-top: 1%;
+                          "
+                          ng-show="selectedSno != null || selectedASno != null || selectedSname != null"
+                        >
+                          <option
+                            class="dropdown-item"
+                            disabled=""
+                            value="undefined"
+                          >
+                            Select Language
+                          </option>
+                          <option value="mr_in">Marathi</option>
+                          <option value="en_in">English</option>
+                          <option value="hi_in">Hindi</option>
+                          <option value="bn_in">Bengali</option>
+                          <option value="gj_in">Gujarati</option>
+                          <option value="pn_in">Punjabi</option>
+                          <option value="ml_in">Malayalam</option>
+                          <option value="tm_in">Tamil</option>
+                          <option value="tl_in">Telugu</option>
+                          <option value="kn_in">Kannada</option>
+                          <option value="or_in">Oriya</option>
+                          <option value="ur_in">Urdu</option>
+                          <option value="as_in">Assamese</option>
+                          <option value="mn_in">Manipuri(Assamese)</option>
+                          <option value="ni_in">Nepali</option>
+                          <option value="ko_in">Konkani</option>
+                          <option value="mi_in">Maithili(Devanagri)</option>
+                          <option value="di_in">Dogri</option>
+                          <option value="bo_in">Bodo</option>
+                          <option value="st_in">Santhali(Devanagri)</option>
+                          <option value="sd_in">Sindhi(Devanagri)</option>
+                          <option value="ks_in">Kashmiri(Devanagri)</option>
+                          <option value="ks.pa_in">
+                            Kashmiri(Perso Arabic)
+                          </option>
+                          <option value="sk_in">Sanskrit</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 100%; text-align: center">
+                        <div
+                          class="form-group ng-valid-maxlength ng-dirty ng-valid-number ng-valid-required ng-valid-pattern ng-valid ng-valid-minlength"
+                          ng-form=""
+                          name="myForm"
+                        >
+                          <label
+                            style="font-size: 11px"
+                            ng-show="selectedSno != null || selectedASno != null || selectedSname != null"
+                            class=""
+                            >नोंदणीसाठी आपला १० अंकी मोबाईल नंबर खाली
+                            भरा.</label
+                          ><br />
+                          <label
+                            ng-show="selectedSno != null || selectedASno != null || selectedSname != null"
+                            class=""
+                            >मोबाईल:
+                          </label>
+                          <input
+                            type="number"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength="10"
+                            minlength="10"
+                            style="
+                              margin-left: 10%;
+                              margin-top: 2%;
+                              margin-bottom: 2%;
+                            "
+                            ng-model="mobile_number"
+                            name="mobile_number"
+                            onkeypress="return IsNumeric(event);"
+                            ng-show="selectedSno != null || selectedASno != null || selectedSname != null"
+                            ng-pattern="/^[6-9][0-9]{9}$/"
+                            required=""
+                            class="ng-valid-maxlength ng-not-empty ng-dirty ng-valid-number ng-valid-required ng-valid-pattern ng-valid ng-valid-minlength ng-touched"
+                          />
+                          <span
+                            style="color: red; margin-left: 16%"
+                            ng-show=" myForm.mobile_number.$error.pattern"
+                            class="ng-hide"
+                            >Please enter valid Mobile number!</span
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3" class="last-rows">
+                        <input
+                          type="button"
+                          value="७/१२ पहा"
+                          ng-show="selectedSno != null &amp;&amp; sno != null &amp;&amp; sno != '' &amp;&amp; mobile_number!= null"
+                          ng-click="show712()"
+                          class=""
+                        />
+                        <input
+                          type="button"
+                          value="७/१२ पहा"
+                          ng-show="selectedASno != null &amp;&amp; mobile_number!= null "
+                          ng-click="showA712()"
+                          class="ng-hide"
+                        />
+                        <input
+                          type="button"
+                          value="७/१२ पहा"
+                          ng-show="selectedSname != null &amp;&amp; mobile_number!= null"
+                          ng-click="show712()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                ng-show="ror == '8a' &amp;&amp;  vilCode != null &amp;&amp; opt8a != null"
+                class="ng-hide"
+              >
+                <table width="95%">
+                  <tbody>
+                    <tr>
+                      <td class="input-text-column">
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength ng-hide"
+                          type="number"
+                          ng-model="kno"
+                          ng-maxlength="7"
+                          ng-show="opt8a == 'kn'"
+                          ng-change="knoChange()"
+                        />
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-hide"
+                          type="text"
+                          ng-model="name8a"
+                          ng-show="opt8a == '8afn' || opt8a == '8amn' || opt8a == '8aln'"
+                          ng-change="name8aChange()"
+                          ng-pattern="/^[a-zA-Z]*$/"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="button"
+                          value="शोधा"
+                          ng-show="(kno != null &amp;&amp; kno != '') || (name8a != null &amp;&amp; name8a != '')"
+                          ng-click="searchk()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="input-text-column">
+                        <label
+                          ng-show="kRange != null"
+                          class="ng-binding ng-hide"
+                          >गावातील एकूण नावे :[] :
+                        </label>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedKRange"
+                          ng-show="kRange != null "
+                          ng-options="krange.id as krange.range for krange in kRange"
+                          ng-change="showAKNames()"
+                        >
+                          <option selected="selected"></option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="input-text-column">
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedKno"
+                          ng-show="knos != null &amp;&amp; kno != null &amp;&amp; kno != ''"
+                          style="margin-bottom: 2%; width: 230px"
+                          ng-change="showMobile()"
+                          ng-options="kno.khata_no as kno.khata_no for kno in knos"
+                        >
+                          <option value="" selected="selected" class="">
+                            खाता नंबर निवडा
+                          </option>
+                        </select>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedKname"
+                          ng-show="rknames != null "
+                          ng-change="showMobile()"
+                          ng-options="kname.khata_no as kname.full_name for kname in rknames"
+                        >
+                          <option selected="selected"></option>
+                        </select>
+                        <select
+                          style="margin-left: -50px"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedKname"
+                          ng-show="knames != null &amp;&amp; (name8a != null &amp;&amp; name8a != '')"
+                          ng-change="showMobile()"
+                          ng-options="kname.khata_no as kname.full_name for kname in knames"
+                        >
+                          <option selected="selected"></option>
+                        </select>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td style="width: 100%; text-align: center">
+                        <div
+                          class="form-group ng-pristine ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid ng-valid-required"
+                          ng-form=""
+                          name="myForm1"
+                        >
+                          <label
+                            style="font-size: 11px"
+                            ng-show="selectedKno != null || selectedKname != null "
+                            class="ng-hide"
+                            >नोंदणीसाठी आपला १० अंकी मोबाईल नंबर खाली
+                            भरा.</label
+                          ><br />
+                          <label
+                            ng-show="selectedKno != null || selectedKname != null "
+                            class="ng-hide"
+                            >मोबाईल:
+                          </label>
+                          <input
+                            type="number"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength="10"
+                            minlength="10"
+                            style="
+                              margin-left: 10%;
+                              margin-top: 2%;
+                              margin-bottom: 2%;
+                            "
+                            ng-model="mobile_number"
+                            name="mobile_number"
+                            onkeypress="return IsNumeric(event);"
+                            ng-show="selectedKno != null || selectedKname != null "
+                            ng-pattern="/^[6-9][0-9]{9}$/"
+                            required=""
+                            class="ng-pristine ng-untouched ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-hide ng-not-empty ng-valid ng-valid-required"
+                          />
+                          <span
+                            style="color: red; margin-left: 16%"
+                            ng-show="myForm1.mobile_number.$error.pattern"
+                            class="ng-hide"
+                            >Please enter valid number!</span
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="last-rows">
+                        <input
+                          type="button"
+                          value="८अ पहा"
+                          ng-show="selectedKno != null &amp;&amp; kno != null &amp;&amp; kno != '' &amp;&amp; mobile_number!= null"
+                          ng-click="show8a()"
+                          class="ng-hide"
+                        />
+                        <input
+                          type="button"
+                          value="८अ पहा"
+                          ng-show="selectedKname != null &amp;&amp; mobile_number!= null"
+                          ng-click="show8a()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                ng-show="ror == 'pr' &amp;&amp;  vilCode != null &amp;&amp; optpr != null"
+                class="ng-hide"
+              >
+                <table width="95%">
+                  <tbody>
+                    <tr>
+                      <td class="input-text-column">
+                        <input
+                          style="margin-right: 8%"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-hide"
+                          type="text"
+                          ng-model="namepr"
+                          ng-show="optpr == 'prfn' || optpr == 'prmn' || optpr == 'prln' || optpr == 'pran'"
+                          ng-change="name8aChange()"
+                          ng-pattern="/^[a-zA-Z]*$/"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="button"
+                          value="शोधा Range"
+                          ng-show="namepr != null &amp;&amp; namepr != '' "
+                          ng-click="searchpr()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="input-text-column">
+                        <label
+                          ng-show="prRange != null"
+                          class="ng-binding ng-hide"
+                          >गावातील एकूण नावे :[] :
+                        </label>
+                        <select
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedprRange"
+                          ng-show="prRange != null "
+                          ng-options="prRange.id as prRange.range for prRange in prRange"
+                          ng-change="showAprNames()"
+                        >
+                          <option value="?" selected="selected"></option>
+                        </select>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="input-text-column">
+                        <select
+                          style="margin-left: -50px"
+                          class="input-text ng-pristine ng-untouched ng-valid ng-empty ng-hide"
+                          ng-model="selectedprname"
+                          ng-show="prnames != null &amp;&amp; (namepr != null &amp;&amp; namepr != '')"
+                          ng-change="showMobile()"
+                          ng-options="prname.owner_nm_2100"
+                        >
+                          <option value="? undefined:undefined ?"></option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 100%; text-align: center">
+                        <div
+                          class="form-group ng-pristine ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid ng-valid-required"
+                          ng-form=""
+                          name="myForm1"
+                        >
+                          <label
+                            style="font-size: 11px"
+                            ng-show="selectedOWNER != null || selectedKname != null "
+                            class="ng-hide"
+                            >नोंदणीसाठी आपला १० अंकी मोबाईल नंबर खाली
+                            भरा.</label
+                          ><br />
+                          <label
+                            ng-show="selectedKno != null || selectedKname != null "
+                            class="ng-hide"
+                            >मोबाईल:
+                          </label>
+                          <input
+                            type="number"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength="10"
+                            minlength="10"
+                            style="
+                              margin-left: 10%;
+                              margin-top: 2%;
+                              margin-bottom: 2%;
+                            "
+                            ng-model="mobile_number"
+                            name="mobile_number"
+                            onkeypress="return IsNumeric(event);"
+                            ng-show="selectedKno != null || selectedKname != null "
+                            ng-pattern="/^[6-9][0-9]{9}$/"
+                            required=""
+                            class="ng-pristine ng-untouched ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-hide ng-not-empty ng-valid ng-valid-required"
+                          />
+                          <span
+                            style="color: red; margin-left: 16%"
+                            ng-show="myForm1.mobile_number.$error.pattern"
+                            class="ng-hide"
+                            >Please enter valid number!</span
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="last-rows">
+                        <input
+                          type="button"
+                          value="मालमत्ता पत्रक पहा"
+                          style="margin-left: 20%"
+                          ng-show="selectedctsno != null &amp;&amp; CtsNo != null &amp;&amp; CtsNo != '' &amp;&amp; mobile_number!= null"
+                          ng-click="showOWNERPC()"
+                          class="ng-hide"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <script type="text/javascript">
+              <!--
+              function getID(idLength) {
+                var chars =
+                  "0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+                chars = chars.split(",");
+                var min = 0;
+                var max = chars.length - 1;
+                var id = "";
+                for (var i = 0; i < idLength; i++) {
+                  id +=
+                    chars[Math.floor(Math.random() * (max - min + 1) + min)];
+                }
+                return id;
+              }
+
+              //-->
+            </script>
+            <script type="text/javascript">
+              var specialKeys = new Array();
+              specialKeys.push(8); //Backspace
+              function IsNumeric(e) {
+                var keyCode = e.which ? e.which : e.keyCode;
+                var ret =
+                  (keyCode >= 48 && keyCode <= 57) ||
+                  specialKeys.indexOf(keyCode) != -1;
+                return ret;
+              }
+            </script>
+            <script type="text/javascript">
+              jQuery(document).ready(function ($) {
+                // Disable scroll when focused on a number input.
+                $("form").on("focus", "input[type=number]", function (e) {
+                  $(this).on("wheel", function (e) {
+                    e.preventDefault();
+                  });
+                });
+
+                // Restore scroll on number inputs.
+                $("form").on("blur", "input[type=number]", function (e) {
+                  $(this).off("wheel");
+                });
+
+                // Disable up and down keys.
+                $("form").on("keydown", "input[type=number]", function (e) {
+                  if (e.which == 38 || e.which == 40) e.preventDefault();
+                });
+              });
+            </script>
+            <script>
+              var app = angular.module("myApp", []);
+              app.controller("distCtrl", function ($scope, $http) {
+                $scope.changedDist = function () {
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  $scope.talCode = null;
+                  $scope.vilCode = null;
+                  $scope.offcode = null;
+                  if ($scope.ror != "pc") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getTalukas",
+                      data: "{'id':'" + $scope.distCode + "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      var str = JSON.parse(data.d);
+                      $scope.tnames = str;
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  } else if ($scope.ror == "pc") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getCTSOs",
+                      data: "{'id':'" + $scope.distCode + "'}",
+                    });
+                    request.success(function (data, status) {
+                      if (data.d.slice(0, 7) == "http://") {
+                        alert(
+                          "माहिती पाहण्यासाठी जिल्हा संकेतस्थळी पुनर्निदेशित करत आहे."
+                        );
+                        window.open(data.d);
+                        $scope.distCode = null;
+                      } else {
+                        var str = JSON.parse(data.d);
+                        $scope.tnames = str;
+                      }
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+
+                $scope.changedTal = function () {
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  if ($scope.ror != "pc") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getVillages",
+                      data:
+                        "{'did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.vnames = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  } else if ($scope.ror == "pc") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getCTSOLink",
+                      data:
+                        "{'did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.vnames = str;
+                      } else {
+                        //alert(data.d);
+                        alert(
+                          "ही माहिती ऑनलाइन संकेतस्थळी उपलब्ध नसल्यामुळे, माहिती पाहण्यासाठी जिल्हा संकेतस्थळी पुनर्निदेशित करत आहे."
+                        );
+                        window.open(data.d);
+                        $scope.talCode = null;
+                        $scope.distCode = null;
+                      }
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+
+                $scope.changedVil = function () {
+                  $scope.opt8a = null;
+                  $scope.opt712 = null;
+                  $scope.optcts = null;
+                  $scope.optOWNER = null;
+                  $scope.propt = null;
+
+                  $scope.name8a = null;
+                  $scope.selectedKname = null;
+                  $scope.knames = null;
+                  $scope.rknames = null;
+                  $scope.kRange = null;
+                  $scope.aknames = null;
+                  $scope.selectedKRange = null;
+
+                  $scope.kno = null;
+                  $scope.selectedKno = null;
+                  $scope.knos = null;
+                  $scope.selectedKname = null;
+
+                  $scope.name712 = null;
+                  $scope.selectedSname = null;
+                  $scope.snames = null;
+                  $scope.rsnames = null;
+                  $scope.sRange = null;
+                  $scope.asnames = null;
+                  $scope.selectedSRange = null;
+
+                  $scope.sno = null;
+                  $scope.selectedSno = null;
+                  $scope.snos = null;
+                  $scope.selectedSname = null;
+                  $scope.asno = null;
+                  $scope.asnos = null;
+                  $scope.selectedASno = null;
+
+                  $scope.asnos = null;
+                  $scope.selectedASno = null;
+
+                  $scope.CtsNo = null;
+                  $scope.selectedctsno = null;
+                  $scope.mobile_number = null;
+
+                  $scope.OWNER = null;
+                  $scope.selectedOWNER = null;
+
+                  $scope.selectedctLang = null;
+                };
+
+                $scope.CtsNoData = [];
+                $scope.searchCTS = function () {
+                  debugger;
+                  $scope.CtsNoData = [];
+                  // Show loading spinner.
+                  console.log($scope.CtsNo);
+                  $scope.loading = true;
+                  if ($scope.CtsNo != "") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getCTSno",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.CtsNo +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      debugger;
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        //  if(str)
+                        $scope.CtsNoData = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+                $scope.OWNERData = [];
+                $scope.searchOWNER = function () {
+                  $scope.OWNERData = [];
+                  // Show loading spinner.
+                  console.log($scope.OWNER);
+                  $scope.loading = true;
+                  if ($scope.OWNER != "") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getOWNER",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.OWNER +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.optpr +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+                    debugger;
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        //  if(str)
+                        $scope.OWNERData = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+                $scope.searchk = function () {
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  if ($scope.opt8a == "kn") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getKnos",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.kno +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.knos = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  } else if (
+                    $scope.opt8a == "8afn" ||
+                    $scope.opt8a == "8amn" ||
+                    $scope.opt8a == "8aln"
+                  ) {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getKnames",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.name8a +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.opt8a +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.knames = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+                $scope.searchS = function () {
+                  // Show loading spinner.
+                  $scope.loading = true;
+
+                  if ($scope.opt712 == "sryno") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getSnos",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.sno +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.snos = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  } else if (
+                    $scope.opt712 == "712fn" ||
+                    $scope.opt712 == "712mn" ||
+                    $scope.opt712 == "712ln"
+                  ) {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getSnames",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.name712 +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.opt712 +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.snames = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  } else if ($scope.opt712 == "asryno") {
+                    var reruest = $http({
+                      method: "POST",
+                      url: "Home.aspx/getASnos",
+                      //data: "{'ptxt':'" + $scope.asno + "','vid':'" + $scope.vilCode + "','did':'" + $scope.distCode + "','tid':'" + $scope.talCode + "'}"
+                      data:
+                        "{'ptxt':'" +
+                        0 +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    })
+                      .success(function (data, status) {
+                        if (data.d.startsWith("[")) {
+                          var str = JSON.parse(data.d);
+                          $scope.asnos = str;
+                        } else alert(data.d);
+                      })
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+
+                $scope.searchpr = function () {
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  if ($scope.optpr == "propt") {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getOWNER",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.OWNER +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.knos = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                  // sud else if ($scope.optpr == 'prfn' || $scope.optpr == 'prmn' || $scope.optpr == 'prln') {
+                  else if (
+                    $scope.optpr == "prfn" ||
+                    $scope.optpr == "prmn" ||
+                    $scope.optpr == "prln" ||
+                    $scope.optpr == "pran"
+                  ) {
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getKnames",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.namepr +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.optpr +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.prnames = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                };
+
+                $scope.show8a = function () {
+                  var getInput = getID(6);
+                  $.ajax({
+                    url: "getR1.aspx?r2=" + getInput,
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (result) {
+                      if (result.d != "") {
+                      }
+                    },
+                    error: function (error) {
+                      alert(error.responseText);
+                    },
+                    async: false,
+                  });
+                  $scope.kn =
+                    $scope.selectedKno != null
+                      ? $scope.selectedKno
+                      : $scope.selectedKname;
+                  $scope.distName = $("#distSelect option:selected").html();
+                  $scope.talName = $("#talSelect option:selected").html();
+                  $scope.vilName = $("#vilSelect option:selected").html();
+                  $scope.divisionName = $("#divisionName").text();
+
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  var request = $http({
+                    method: "POST",
+                    url: "Home.aspx/call8a",
+                    data:
+                      "{'kno':'" +
+                      $scope.kn +
+                      "','vid':'" +
+                      $scope.vilCode +
+                      "','dn':'" +
+                      $scope.distName +
+                      "','tn':'" +
+                      $scope.talName +
+                      "','vn':'" +
+                      $scope.vilName +
+                      "','did':'" +
+                      $scope.distCode +
+                      "','tid':'" +
+                      $scope.talCode +
+                      "','mno':'" +
+                      $scope.mobile_number +
+                      "','divisionName':'" +
+                      $scope.divisionName +
+                      "'}",
+                  });
+
+                  request.success(function (data, status) {
+                    if (data.d == false) {
+                      alert(
+                        "Viewing limit of 7/12+8A per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल ७/१२+८अ उतारा पाहण्याची मर्यादा संपली आहे."
+                      );
+                    } else window.open("8a.aspx");
+                  });
+                  request
+                    .error(function (data, status) {
+                      $scope.status = status;
+                      //alert($scope.status);
+                    })
+                    .finally(function () {
+                      // Hide loading spinner whether our call succeeded or failed.
+                      $scope.loading = false;
+                    });
+                };
+
+                //    // Show loading spinner.
+                //    $scope.loading = true;
+                //    var request = $http({
+                //        method: "POST",
+                //        url: "Home.aspx/call8a",
+                //        data: "{'kno':'" + $scope.kn + "','vid':'" + $scope.vilCode + "','dn':'" + $scope.distName + "','tn':'" + $scope.talName + "','vn':'" + $scope.vilName + "','did':'" + $scope.distCode + "','tid':'" + $scope.talCode + "','mno':'" + $scope.mobile_number + "'}"
+                //    });
+
+                //    request.success(function (data, status) {
+                //        if (data.d == false) {
+                //            alert("Viewing limit of 7/12+8A per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल ७/१२+८अ उतारा पाहण्याची मर्यादा संपली आहे.");
+
+                //        }
+                //        else {//window.open("8a.aspx");
+                //            $scope.loading = true;
+                //        var request1 = $http({
+                //            method: "POST",
+                //            url: "Home.aspx/callRORInterval",
+                //            data: "{'mno':'" + $scope.mobile_number + "'}"
+                //        });
+                //        request1.success(function (data, status) {
+                //            if (data.d == 'TRUE') {
+
+                //                window.open("8a.aspx");
+                //            }
+                //            else {
+                //                alert("Next Land ROR(7/12,8A) shall be viewed only after " + data.d + " for " + $scope.mobile_number);
+                //            }
+
+                //        });
+                //        request1.error(function (data, status) {
+                //            $scope.status = status;
+                //            //alert($scope.status);
+                //        })
+                //        .finally(function () {
+                //            // Hide loading spinner whether our call succeeded or failed.
+                //            $scope.loading = false;
+                //        });
+                //    }
+                //    })
+                //    request.error(function (data, status) {
+                //        $scope.status = status;
+                //        //alert($scope.status);
+                //    })
+                //    .finally(function () {
+                //        // Hide loading spinner whether our call succeeded or failed.
+                //        $scope.loading = false;
+                //    });
+                //};
+
+                $scope.show712 = function () {
+                  var getInput = getID(6);
+
+                  $.ajax({
+                    url: "getR1.aspx?r2=" + getInput,
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (result) {
+                      if (result.d != "") {
+                      }
+                    },
+                    error: function (error) {
+                      alert(error.responseText);
+                    },
+                    async: false,
+                  });
+                  $scope.sn =
+                    $scope.selectedSno != null
+                      ? $scope.selectedSno
+                      : $scope.selectedSname;
+                  $scope.distName = $("#distSelect option:selected").html();
+                  $scope.talName = $("#talSelect option:selected").html();
+                  $scope.vilName = $("#vilSelect option:selected").html();
+                  $scope.divisionName = $("#divisionName").text();
+                  $scope.LanguageName = $("#SelectLang option:selected").html();
+
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  var request = $http({
+                    method: "POST",
+                    url: "Home.aspx/call712",
+                    data:
+                      "{'sno':'" +
+                      $scope.sn +
+                      "','vid':'" +
+                      $scope.vilCode +
+                      "','dn':'" +
+                      $scope.distName +
+                      "','tn':'" +
+                      $scope.talName +
+                      "','vn':'" +
+                      $scope.vilName +
+                      "','tc':'" +
+                      $scope.talCode +
+                      "','dc':'" +
+                      $scope.distCode +
+                      "','did':'" +
+                      $scope.distCode +
+                      "','tid':'" +
+                      $scope.talCode +
+                      "','mno':'" +
+                      $scope.mobile_number +
+                      "','Language':'" +
+                      $scope.selectedctLang +
+                      "','divisionName':'" +
+                      $scope.divisionName +
+                      "','LanguageName':'" +
+                      $scope.LanguageName +
+                      "'}",
+                  });
+                  request.success(function (data, status) {
+                    if (data.d == false) {
+                      alert(
+                        "Viewing limit of 7/12+8A per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल ७/१२+८अ उतारा पाहण्याची मर्यादा संपली आहे."
+                      );
+                    } else window.open("pg712_changes.aspx");
+                  });
+                  request
+                    .error(function (data, status) {
+                      $scope.status = status;
+                      //alert($scope.status);
+                    })
+                    .finally(function () {
+                      // Hide loading spinner whether our call succeeded or failed.
+                      $scope.loading = false;
+                    });
+                };
+                //Code for Next Land ROR(7/12,8A) shall be viewed only after 15 miniutes..
+                //    // Show loading spinner.
+                //    $scope.loading = true;
+                //    var request = $http({
+                //        method: "POST",
+                //        url: "Home.aspx/call712",
+                //        data: "{'sno':'" + $scope.sn + "','vid':'" + $scope.vilCode + "','dn':'" + $scope.distName + "','tn':'" + $scope.talName + "','vn':'" + $scope.vilName + "','tc':'" + $scope.talCode + "','dc':'" + $scope.distCode + "','did':'" + $scope.distCode + "','tid':'" + $scope.talCode + "','mno':'" + $scope.mobile_number + "'}"
+                //    });
+                //    request.success(function (data, status) {
+                //        if (data.d == false) {
+                //            alert("Viewing limit of 7/12+8A per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल ७/१२+८अ उतारा पाहण्याची मर्यादा संपली आहे.");
+
+                //        }
+                //        else {//window.open("pg712_changes.aspx");
+                //            $scope.loading = true;
+                //            var request1 = $http({
+                //                method: "POST",
+                //                url: "Home.aspx/callRORInterval",
+                //                data: "{'mno':'" + $scope.mobile_number + "'}"
+                //            });
+                //            request1.success(function (data, status) {
+                //                if (data.d == 'TRUE') {
+
+                //                    window.open("pg712_changes.aspx");
+                //                }
+                //                else {
+                //                    alert("Next Land ROR(7/12,8A) shall be viewed only after " + data.d + " for " + $scope.mobile_number);
+                //                }
+
+                //            });
+                //            request1.error(function (data, status) {
+                //                $scope.status = status;
+                //                //alert($scope.status);
+                //            })
+                //            .finally(function () {
+                //                // Hide loading spinner whether our call succeeded or failed.
+                //                $scope.loading = false;
+                //            });
+                //        }
+
+                //    })
+                //    request.error(function (data, status) {
+                //        $scope.status = status;
+                //       // alert($scope.status);
+                //    })
+                //    .finally(function () {
+                //        // Hide loading spinner whether our call succeeded or failed.
+                //        $scope.loading = false;
+                //    });
+                //};
+                //---------------------------------------
+                $scope.showA712 = function () {
+                  var getInput = getID(6);
+                  $.ajax({
+                    url: "getR1.aspx?r2=" + getInput,
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (result) {
+                      if (result.d != "") {
+                      }
+                    },
+                    error: function (error) {
+                      alert(error.responseText);
+                    },
+                    async: false,
+                  });
+                  $scope.sn = $scope.selectedASno;
+                  $scope.distName = $("#distSelect option:selected").html();
+                  $scope.talName = $("#talSelect option:selected").html();
+                  $scope.vilName = $("#vilSelect option:selected").html();
+                  $scope.divisionName = $("#divisionName").text();
+                  $scope.LanguageName = $("#SelectLang option:selected").html();
+
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  var request = $http({
+                    method: "POST",
+                    url: "Home.aspx/call712",
+                    data:
+                      "{'sno':'" +
+                      $scope.sn +
+                      "','vid':'" +
+                      $scope.vilCode +
+                      "','dn':'" +
+                      $scope.distName +
+                      "','tn':'" +
+                      $scope.talName +
+                      "','vn':'" +
+                      $scope.vilName +
+                      "','tc':'" +
+                      $scope.talCode +
+                      "','dc':'" +
+                      $scope.distCode +
+                      "','did':'" +
+                      $scope.distCode +
+                      "','tid':'" +
+                      $scope.talCode +
+                      "','mno':'" +
+                      $scope.mobile_number +
+                      "','Language':'" +
+                      $scope.selectedctLang +
+                      "','divisionName':'" +
+                      $scope.divisionName +
+                      "','LanguageName':'" +
+                      $scope.LanguageName +
+                      "'}",
+                  });
+
+                  request.success(function (data, status) {
+                    if (data.d == false) {
+                      alert(
+                        "Viewing limit of 7/12 per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल ७/१२ उतारा पाहण्याची मर्यादा संपली आहे."
+                      );
+                    } else window.open("pg712_changes.aspx");
+                  });
+                  request
+                    .error(function (data, status) {
+                      $scope.status = status;
+                      // alert($scope.status);
+                    })
+                    .finally(function () {
+                      // Hide loading spinner whether our call succeeded or failed.
+                      $scope.loading = false;
+                    });
+                };
+
+                //Code for Next Land ROR(7/12,8A) shall be viewed only after 15 miniutes..
+                //    // Show loading spinner.
+                //    $scope.loading = true;
+                //    var request = $http({
+                //        method: "POST",
+                //        url: "Home.aspx/call712",
+                //        data: "{'sno':'" + $scope.sn + "','vid':'" + $scope.vilCode + "','dn':'" + $scope.distName + "','tn':'" + $scope.talName + "','vn':'" + $scope.vilName + "','tc':'" + $scope.talCode + "','dc':'" + $scope.distCode + "','did':'" + $scope.distCode + "','tid':'" + $scope.talCode + "','mno':'" + $scope.mobile_number + "'}"
+                //    });
+
+                //    request.success(function (data, status) {
+                //        if (data.d == false) {
+                //            alert("Viewing limit of 7/12 per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल ७/१२ उतारा पाहण्याची मर्यादा संपली आहे.");
+                //        }
+                //        else {//window.open("pg712_changes.aspx");
+                //            $scope.loading = true;
+                //            var request1 = $http({
+                //                method: "POST",
+                //                url: "Home.aspx/callRORInterval",
+                //                data: "{'mno':'" + $scope.mobile_number + "'}"
+                //            });
+                //            request1.success(function (data, status) {
+                //                if (data.d == 'TRUE') {
+
+                //                    window.open("pg712_changes.aspx");
+                //                }
+                //                else {
+                //                    alert("Next Land ROR(7/12,8A) shall be viewed only after " + data.d + " for " + $scope.mobile_number);
+                //                }
+
+                //            });
+                //            request1.error(function (data, status) {
+                //                $scope.status = status;
+                //                //alert($scope.status);
+                //            })
+                //            .finally(function () {
+                //                // Hide loading spinner whether our call succeeded or failed.
+                //                $scope.loading = false;
+                //            });
+                //        }
+                //    })
+                //    request.error(function (data, status) {
+                //        $scope.status = status;
+                //       // alert($scope.status);
+                //    })
+                //    .finally(function () {
+                //        // Hide loading spinner whether our call succeeded or failed.
+                //        $scope.loading = false;
+                //    });
+                //};
+
+                $scope.showPC = function () {
+                  debugger;
+                  var getInput = getID(6);
+
+                  $.ajax({
+                    url: "getR1.aspx?r2=" + getInput,
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (result) {
+                      if (result.d != "") {
+                      }
+                    },
+                    error: function (error) {
+                      alert(error.responseText);
+                    },
+                    async: false,
+                  });
+                  $scope.distName = $("#distSelect1 option:selected").html();
+                  $scope.talName = $("#talSelect option:selected").html();
+                  $scope.vilName = $("#vilSelect1 option:selected").html();
+                  $scope.divisionName = $("#divisionName").text();
+                  $scope.LanguageName = $("#SelectLang option:selected").html();
+                  // Show loading spinner.
+                  $scope.loading = true;
+
+                  var request = $http({
+                    method: "POST",
+                    url: "Home.aspx/callPC",
+                    data:
+                      "{'ctsno':'" +
+                      $scope.selectedctsno +
+                      "','vid':'" +
+                      $scope.vilCode +
+                      "','vname':'" +
+                      $scope.vilName +
+                      "','did':'" +
+                      $scope.distCode +
+                      "','tid':'" +
+                      $scope.talCode +
+                      "','mno':'" +
+                      $scope.mobile_number +
+                      "','dname':'" +
+                      $scope.distName +
+                      "','tname':'" +
+                      $scope.talName +
+                      "','Language':'" +
+                      $scope.selectedctLang +
+                      "','divisionName':'" +
+                      $scope.divisionName +
+                      "','LanguageName':'" +
+                      $scope.LanguageName +
+                      "'}",
+                  });
+
+                  request.success(function (data, status) {
+                    if (data.d == false) {
+                      alert(
+                        "Viewing limit of Property Card per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल मालमत्ता पत्रक पाहण्याची मर्यादा संपली आहे."
+                      );
+                    } else window.open("PropertyCard.aspx");
+                  });
+                  request
+                    .error(function (data, status) {
+                      $scope.status = status;
+                      //alert($scope.status);
+                    })
+                    .finally(function () {
+                      // Hide loading spinner whether our call succeeded or failed.
+                      $scope.loading = false;
+                    });
+                };
+
+                //---------------------------------------
+                $scope.showOWNERPC = function () {
+                  debugger;
+                  var getInput = getID(6);
+
+                  $.ajax({
+                    url: "getR1.aspx?r2=" + getInput,
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (result) {
+                      if (result.d != "") {
+                      }
+                    },
+                    error: function (error) {
+                      alert(error.responseText);
+                    },
+                    async: false,
+                  });
+                  $scope.distName = $("#distSelect1 option:selected").html();
+                  $scope.talName = $("#talSelect option:selected").html();
+                  $scope.vilName = $("#vilSelect1 option:selected").html();
+                  $scope.divisionName = $("#divisionName").text();
+                  $scope.LanguageName = $("#SelectLang option:selected").html();
+                  // Show loading spinner.
+                  $scope.loading = true;
+                  var request = $http({
+                    method: "POST",
+                    url: "Home.aspx/callPC",
+                    data:
+                      "{'ctsno':'" +
+                      $scope.selectedOWNER +
+                      "','vid':'" +
+                      $scope.vilCode +
+                      "','vname':'" +
+                      $scope.vilName +
+                      "','did':'" +
+                      $scope.distCode +
+                      "','tid':'" +
+                      $scope.talCode +
+                      "','mno':'" +
+                      $scope.mobile_number +
+                      "','dname':'" +
+                      $scope.distName +
+                      "','tname':'" +
+                      $scope.talName +
+                      "','Language':'" +
+                      $scope.selectedctLang +
+                      "','divisionName':'" +
+                      $scope.divisionName +
+                      "','LanguageName':'" +
+                      $scope.LanguageName +
+                      "'}",
+                  });
+
+                  request.success(function (data, status) {
+                    if (data.d == false) {
+                      alert(
+                        "Viewing limit of Property Card per day per Mobile is exhausted / प्रति दिन प्रति मोबाइल मालमत्ता पत्रक पाहण्याची मर्यादा संपली आहे."
+                      );
+                    } else window.open("PropertyCard.aspx");
+                  });
+                  request
+                    .error(function (data, status) {
+                      $scope.status = status;
+                      //alert($scope.status);
+                    })
+                    .finally(function () {
+                      // Hide loading spinner whether our call succeeded or failed.
+                      $scope.loading = false;
+                    });
+                };
+
+                //---------------------------------------
+                $scope.$watch("optpr", function (value) {
+                  debugger;
+                  if (value == "cts") {
+                    $scope.optOWNER = null;
+                    $scope.selectedOWNER = null;
+                    $scope.OWNERData = null;
+                    $scope.selectedprRange = null;
+                    $scope.aprnames = null;
+                    $scope.OWNER = null;
+                  }
+                  // sud else if (value == 'prfn' || value == 'prmn' || value == 'prln') {
+                  else if (
+                    value == "prfn" ||
+                    value == "prmn" ||
+                    value == "prln" ||
+                    value == "pran"
+                  ) {
+                    $scope.CtsNo = null;
+                    $scope.selectedctsno = null;
+                    $scope.CtsNoData = null;
+                    $scope.selectedprRange = null;
+                    $scope.aprnames = null;
+                    $scope.CtsNo = null;
+                  } else if (value == "pran") {
+                    $scope.optOWNER = null;
+                    $scope.selectedOWNER = null;
+                    $scope.OWNERData = null;
+                    $scope.CtsNo = null;
+                    $scope.selectedctsno = null;
+                    $scope.CtsNoData = null;
+                    $scope.OWNER = null;
+                    // Show loading spinner.
+                    $scope.loading = true;
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getOWNER",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.namepr +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.optpr +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      var str = JSON.parse(data.d);
+                      $scope.aprnames = str;
+                      var range = "[";
+                      for (var i = 1, j = 1; i <= $scope.aprnames.length; j++) {
+                        range += '{"id":"' + j + '","range":"' + i + "-";
+                        i += 99;
+                        if (i <= $scope.aprnames.length) range += i + '"},';
+                        else range += $scope.aprnames.length + '"}';
+                        i += 1;
+                      }
+                      range += "]";
+                      $scope.prRange = JSON.parse(range);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                });
+                //---------------------------------------
+                $scope.$watch("opt8a", function (value) {
+                  if (value == "kn") {
+                    $scope.name8a = null;
+                    $scope.selectedKname = null;
+                    $scope.knames = null;
+                    $scope.rknames = null;
+                    $scope.kRange = null;
+                    $scope.aknames = null;
+                    $scope.selectedKRange = null;
+                    $scope.mobile_number = null;
+                  } else if (
+                    value == "8afn" ||
+                    value == "8amn" ||
+                    value == "8aln"
+                  ) {
+                    $scope.kno = null;
+                    $scope.selectedKno = null;
+                    $scope.knos = null;
+                    $scope.rknames = null;
+                    $scope.kRange = null;
+                    $scope.aknames = null;
+                    $scope.selectedKname = null;
+                    $scope.selectedKRange = null;
+                    $scope.mobile_number = null;
+                  } else if (value == "8aan") {
+                    $scope.name8a = null;
+                    $scope.selectedKname = null;
+                    $scope.knames = null;
+                    $scope.kno = null;
+                    $scope.selectedKno = null;
+                    $scope.knos = null;
+                    $scope.mobile_number = null;
+                    // Show loading spinner.
+                    $scope.loading = true;
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getKnames",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.name8a +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.opt8a +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+
+                    request.success(function (data, status) {
+                      var str = JSON.parse(data.d);
+                      $scope.aknames = str;
+                      var range = "[";
+                      for (var i = 1, j = 1; i <= $scope.aknames.length; j++) {
+                        range += '{"id":"' + j + '","range":"' + i + "-";
+                        i += 99;
+                        if (i <= $scope.aknames.length) range += i + '"},';
+                        else range += $scope.aknames.length + '"}';
+                        i += 1;
+                      }
+                      range += "]";
+                      $scope.kRange = JSON.parse(range);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                });
+
+                $scope.$watch("opt712", function (value) {
+                  if (value == "sryno") {
+                    $scope.name712 = null;
+                    $scope.selectedSname = null;
+                    $scope.snames = null;
+                    $scope.rsnames = null;
+                    $scope.sRange = null;
+                    $scope.asnames = null;
+                    $scope.selectedSRange = null;
+                    $scope.asnos = null;
+                    $scope.mobile_number = null;
+                  } else if (value == "asryno") {
+                    $scope.name712 = null;
+                    $scope.selectedSname = null;
+                    $scope.snames = null;
+                    $scope.rsnames = null;
+                    $scope.sRange = null;
+                    $scope.asnames = null;
+                    $scope.selectedSRange = null;
+                    $scope.sno = null;
+                    $scope.mobile_number = null;
+                  } else if (
+                    value == "712fn" ||
+                    value == "712mn" ||
+                    value == "712ln"
+                  ) {
+                    $scope.sno = null;
+                    $scope.selectedSno = null;
+                    $scope.snos = null;
+                    $scope.rsnames = null;
+                    $scope.sRange = null;
+                    $scope.asnames = null;
+                    $scope.selectedSname = null;
+                    $scope.selectedSRange = null;
+                    $scope.asnos = null;
+                    $scope.mobile_number = null;
+                  } else if (value == "712an") {
+                    $scope.name712 = null;
+                    $scope.selectedSname = null;
+                    $scope.snames = null;
+                    $scope.sno = null;
+                    $scope.selectedSno = null;
+                    $scope.snos = null;
+                    $scope.asnos = null;
+                    $scope.mobile_number = null;
+                    // Show loading spinner.
+                    $scope.loading = true;
+                    var request = $http({
+                      method: "POST",
+                      url: "Home.aspx/getSnames",
+                      data:
+                        "{'ptxt':'" +
+                        $scope.name712 +
+                        "','vid':'" +
+                        $scope.vilCode +
+                        "','opt':'" +
+                        $scope.opt712 +
+                        "','did':'" +
+                        $scope.distCode +
+                        "','tid':'" +
+                        $scope.talCode +
+                        "'}",
+                    });
+                    request.success(function (data, status) {
+                      var str = JSON.parse(data.d);
+                      $scope.asnames = str;
+                      var range = "[";
+                      for (var i = 1, j = 1; i <= $scope.asnames.length; j++) {
+                        range += '{"id":"' + j + '","range":"' + i + "-";
+                        i += 99;
+                        if (i <= $scope.asnames.length) range += i + '"},';
+                        else range += $scope.asnames.length + '"}';
+                        i += 1;
+                      }
+                      range += "]";
+                      $scope.sRange = JSON.parse(range);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+                });
+
+                $scope.showAKNames = function () {
+                  $scope.rknames = [];
+                  for (
+                    i = $scope.selectedKRange * 100 - 100;
+                    i <= $scope.selectedKRange * 100 - 1 &&
+                    i < $scope.aknames.length;
+                    i++
+                  ) {
+                    $scope.rknames.push($scope.aknames[i]);
+                  }
+                };
+
+                $scope.showASNames = function () {
+                  $scope.rsnames = [];
+                  for (
+                    i = $scope.selectedSRange * 100 - 100;
+                    i <= $scope.selectedSRange * 100 - 1 &&
+                    i < $scope.asnames.length;
+                    i++
+                  ) {
+                    $scope.rsnames.push($scope.asnames[i]);
+                  }
+                };
+                $scope.showAprNames = function () {
+                  $scope.rsnames = [];
+                  for (
+                    i = $scope.selectedprRange * 100 - 100;
+                    i <= $scope.selectedprRange * 100 - 1 &&
+                    i < $scope.aprnames.length;
+                    i++
+                  ) {
+                    $scope.rsnames.push($scope.asnames[i]);
+                  }
+                };
+
+                $scope.mapClick = function (divId, distId) {
+                  if ($scope.selectedDivision == divId) {
+                    $scope.distCode = distId;
+                    $scope.changedDist();
+                  }
+                };
+
+                $scope.$watch("ror", function (value) {
+                  debugger;
+                  if (value == "712" || value == "8a") {
+                    if (document.getElementById("param").value == "1") {
+                      $scope.names = {
+                        5: "अकोला",
+                        7: "अमरावती",
+                        4: "बुलडाणा",
+                        14: "यवतमाळ",
+                        6: "वाशिम",
+                      };
+                      $scope.selectedDivision = "1";
+                    } else if (document.getElementById("param").value == "2") {
+                      $scope.names = {
+                        29: "धाराशिव",
+                        19: "छत्रपती संभाजीनगर",
+                        18: "जालना",
+                        15: "नांदेड",
+                        17: "परभणी",
+                        27: "बीड",
+                        28: "लातूर",
+                        16: "हिंगोली",
+                      };
+                      $scope.selectedDivision = "2";
+                    } else if (document.getElementById("param").value == "3") {
+                      $scope.names = {
+                        21: "ठाणे",
+                        36: "पालघर",
+                        22: "मंबई उपनगर",
+                        //'23': 'मंबई शहर',
+                        32: "रत्नागिरी",
+                        24: "रायगड",
+                        33: "सिंधुदुर्ग",
+                      };
+                      $scope.selectedDivision = "3";
+                    } else if (document.getElementById("param").value == "4") {
+                      $scope.names = {
+                        12: "गडचिरोली",
+                        11: "गोंदिया",
+                        13: "चंद्रपूर",
+                        9: "नागपूर",
+                        10: "भंडारा",
+                        8: "वर्धा",
+                      };
+                      $scope.selectedDivision = "4";
+                    } else if (document.getElementById("param").value == "5") {
+                      $scope.names = {
+                        26: "अहमदनगर",
+                        3: "जळगाव",
+                        2: "धुळे",
+                        1: "नंदुरबार",
+                        20: "नाशिक",
+                      };
+                      $scope.selectedDivision = "5";
+                    } else if (document.getElementById("param").value == "6") {
+                      $scope.names = {
+                        34: "कोल्हापूर",
+                        25: "पुणे",
+                        35: "सांगली",
+                        31: "सातारा",
+                        30: "सोलापूर",
+                      };
+                      $scope.selectedDivision = "6";
+                    } else {
+                    }
+                  } else if (value == "pc") {
+                    //var request = $http({
+                    //    method: "POST",
+                    //    url: "Home.aspx/getDist",
+                    //    data: "{'divid':'" + document.getElementById('param').value + "'}"
+                    //});
+
+                    if (document.getElementById("param").value == "1") {
+                      $scope.names = {
+                        5: "अकोला",
+                        7: "अमरावती",
+                        4: "बुलडाणा",
+                        14: "यवतमाळ",
+                        6: "वाशिम",
+                      };
+                      $scope.selectedDivision = "1";
+                    } else if (document.getElementById("param").value == "2") {
+                      $scope.names = {
+                        29: "धाराशिव",
+                        19: "छत्रपती संभाजीनगर",
+                        18: "जालना",
+                        15: "नांदेड",
+                        17: "परभणी",
+                        27: "बीड",
+                        28: "लातूर",
+                        16: "हिंगोली",
+                      };
+                      $scope.selectedDivision = "2";
+                    } else if (document.getElementById("param").value == "3") {
+                      $scope.names = {
+                        21: "ठाणे",
+                        36: "पालघर",
+                        22: "मंबई उपनगर",
+                        23: "मंबई शहर",
+                        32: "रत्नागिरी",
+                        24: "रायगड",
+                        33: "सिंधुदुर्ग",
+                      };
+                      $scope.selectedDivision = "3";
+                    } else if (document.getElementById("param").value == "4") {
+                      $scope.names = {
+                        12: "गडचिरोली",
+                        11: "गोंदिया",
+                        13: "चंद्रपूर",
+                        9: "नागपूर",
+                        10: "भंडारा",
+                        8: "वर्धा",
+                      };
+                      $scope.selectedDivision = "4";
+                    } else if (document.getElementById("param").value == "5") {
+                      $scope.names = {
+                        26: "अहमदनगर",
+                        3: "जळगाव",
+                        2: "धुळे",
+                        1: "नंदुरबार",
+                        20: "नाशिक",
+                      };
+                      $scope.selectedDivision = "5";
+                    } else if (document.getElementById("param").value == "6") {
+                      $scope.names = {
+                        34: "कोल्हापूर",
+                        25: "पुणे",
+                        35: "सांगली",
+                        31: "सातारा",
+                        30: "सोलापूर",
+                      };
+                      $scope.selectedDivision = "6";
+                    } else {
+                    }
+                    request.success(function (data, status) {
+                      if (data.d.startsWith("[")) {
+                        var str = JSON.parse(data.d);
+                        $scope.names = str;
+                      } else alert(data.d);
+                    });
+                    request
+                      .error(function (data, status) {
+                        $scope.status = status;
+                        //alert($scope.status);
+                      })
+                      .finally(function () {
+                        // Hide loading spinner whether our call succeeded or failed.
+                        $scope.loading = false;
+                      });
+                  }
+
+                  if (value == "712") {
+                    $scope.opt712 = null;
+                    $scope.sno = null;
+                    $scope.snos = null;
+                    $scope.name712 = null;
+                    $scope.snames = null;
+                    $scope.rsnames = null;
+                    $scope.distCode = null;
+                    $scope.talCode = null;
+                    $scope.offcode = null;
+                    $scope.vnames = null;
+                    $scope.vilCode = null;
+                    $scope.mobile_number = null;
+                  } else if (value == "8a") {
+                    $scope.opt8a = null;
+                    $scope.kno = null;
+                    $scope.knos = null;
+                    $scope.name8a = null;
+                    $scope.knames = null;
+                    $scope.rknames = null;
+                    $scope.distCode = null;
+                    $scope.talCode = null;
+                    $scope.offcode = null;
+                    $scope.vnames = null;
+                    $scope.vilCode = null;
+                    $scope.mobile_number = null;
+                  } else if (value == "pc") {
+                    $scope.distCode = null;
+                    $scope.tnames = null;
+                    $scope.onames = null;
+                    $scope.talCode = null;
+                    $scope.offcode = null;
+                    $scope.vnames = null;
+                    $scope.vilCode = null;
+                    $scope.CtsNo = null;
+                    $scope.OWNER = null;
+                    $scope.selectedctsno = null;
+                    $scope.selectedOWNER = null;
+                    $scope.mobile_number = null;
+                  }
+                });
+
+                $scope.opt712change = function () {
+                  $scope.name712 = null;
+                  $scope.sno = null;
+                  $scope.asno = null;
+                  $scope.snos = null;
+                  $scope.asnos = null;
+                };
+                $scope.optprchange = function () {
+                  $scope.namepr = null;
+                  $scope.CtsNo = null;
+                  $scope.OWNER = null;
+                  $scope.selectedctsno = null;
+                  $scope.selectedOWNER = null;
+                };
+
+                $scope.opt8achange = function () {
+                  $scope.name8a = null;
+                };
+
+                $scope.snoChange = function () {
+                  $scope.snos = null;
+                  $scope.asnos = null;
+                };
+
+                $scope.knoChange = function () {
+                  $scope.knos = null;
+                };
+
+                $scope.name712Change = function () {
+                  $scope.snames = null;
+                };
+
+                $scope.name8aChange = function () {
+                  $scope.knames = null;
+                };
+                $scope.nameprChange = function () {
+                  $scope.prnames = null;
+                };
+
+                $scope.ctsChange = function () {
+                  $scope.selectedctsno = null;
+                  $scope.CtsNoData = [];
+                };
+                $scope.OWNERChange = function () {
+                  $scope.selectedOWNER = null;
+                  $scope.OWNERData = [];
+                };
+                $scope.showMobile = function () {
+                  $scope.mobile_number = null;
+                  $scope.selectedctLang = "mr_in";
+                };
+                //$scope.showlang = function () {
+                //    $scope.lbltLang = null;
+                //    $scope.selectedctLang = 'mr_in';
+                //};
+              });
+            </script>
+            <img src="Images/logo_trans.png" width="84%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <table style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 20%"></td>
+            <td style="width: 60%">
+              <div style="display: inline; text-align: center">
+                <p>
+                  सुचना : या संकेतस्थळावर दर्शविलेली माहिती ही कोणत्याही शासकीय
+                  अथवा कायदेशीर बाबींसाठी वापरता येणार नाही.<br />
+                  <b>जमाबंदी आयुक्त आणि संचालक भूमि अभिलेख कार्यालय </b>
+                  <br />
+                  तिसरा मजला, नवीन प्रशासकीय इमारत, कौन्सिल हॉल समोर, पुणे<br />
+                  दूरध्वनी : ०२०-२६०५०००६, ई-मेल : dlrmah[dot]mah[at]nic[dot]in
+                </p>
+                <p>
+                  Best viewed with resolution 1366*768 in Firefox, Chrome, IE.
+                </p>
+              </div>
+            </td>
+            <td style="width: 20%">
+              <div style="display: inline">
+                <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td width="100%">
+                        <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
+                        <table
+                          align="right"
+                          width="125"
+                          border="0"
+                          cellspacing="0"
+                          cellpadding="0"
+                          title="CLICK TO VERIFY: This site uses a GlobalSign SSL Certificate to secure your personal information."
+                        >
+                          <tbody>
+                            <tr>
+                              <td>
+                                <script src="//ssif1.globalsign.com/SiteSeal/siteSeal/siteSeal/siteSeal.do?p1=bhulekh.mahabhumi.gov.in&amp;p2=SZ90-35&amp;p3=image&amp;p4=en&amp;p5=V0022&amp;p6=S001&amp;p7=https"></script>
+                                <span
+                                  ><img
+                                    name="ss_imgTag"
+                                    border="0"
+                                    src="//ssif1.globalsign.com/SiteSeal/siteSeal/siteSeal/siteSealImage.do?p1=bhulekh.mahabhumi.gov.in&amp;p2=SZ90-35&amp;p3=image&amp;p4=en&amp;p5=V0022&amp;p6=S001&amp;p7=https&amp;deterDn="
+                                    alt=""
+                                    oncontextmenu="return false;"
+                                    galleryimg="no"
+                                    style="width: 90px" /></span
+                                ><span
+                                  id="ss_siteSeal_fin_SZ90-35_image_en_V0022_S001"
+                                ></span>
+                                <script
+                                  type="text/javascript"
+                                  src="https://seal.globalsign.com/SiteSeal/gmogs_image_90-35_en_blue.js"
+                                ></script>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+</body>

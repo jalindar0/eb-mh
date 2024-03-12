@@ -46,6 +46,10 @@ assert len(driver.window_handles) == 1
 
 SelectDivision  = driver.find_elements(by=By.TAG_NAME,value="option")  
 i=0
+#jk
+
+
+#jk end    
 
 while i<len(SelectDivision ):
     if SelectDivision [i].text == "पुणे":
@@ -82,6 +86,17 @@ District=driver.find_element(by=By.ID,value="distSelect")
 DistrictSelect=District.find_elements(by=By.TAG_NAME,value="option") 
 i=0
 
+#distict list
+select_element = driver.find_element(by=By.ID,value="distSelect")
+select = Select(select_element)
+options = [option.text for option in select.options]
+options.pop(0)
+
+# Print the list of options
+print("jalindar")
+print(options)
+print("end me")
+
 while i<len(DistrictSelect ):
     if DistrictSelect [i].text == "पुणे":
         DistrictSelect [i].click()
@@ -91,10 +106,24 @@ time.sleep(2)
 
 
 
+# Find the select element by ID
+
+
+
 Taluka=driver.find_element(by=By.ID,value="talSelect")
 TalukaSelect=Taluka.find_elements(by=By.TAG_NAME,value="option") 
 i=0
 
+
+#distict list
+select_element1 = driver.find_element(by=By.ID,value="talSelect")
+select1 = Select(select_element1)
+options = [option.text for option in select1.options]
+options.pop(0)
+# Print the list of options
+print("jalindar")
+print(options)
+print("end me")
 
 while i<len(TalukaSelect ):
     if TalukaSelect [i].text == "हवेली":
@@ -113,6 +142,17 @@ Village  = driver.find_element(by=By.ID,value="vilSelect")
 VillageSelect=Village.find_elements(by=By.TAG_NAME,value="option") 
 i=0
 
+
+#distict list
+select_element2 = driver.find_element(by=By.ID,value="vilSelect")
+select2 = Select(select_element2)
+options = [option.text for option in select2.options]
+options.pop(0)
+# Print the list of options
+print("jalindar")
+print(options)
+print("end me")
+
 while i<len(VillageSelect ):
     if VillageSelect [i].text == "कोपरे":
         VillageSelect [i].click()
@@ -121,11 +161,26 @@ while i<len(VillageSelect ):
 
 time.sleep(2)
 
-
-
 radio_button=driver.find_element(by=By.XPATH,value='//*[@id="rbsryno"]')
 radio_button.click()
 
+
+try:
+    # Wait for the input field to be located
+    input_field = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, "input[type='number'][ng-model='sno']"))
+    )
+    
+    # Extract data from the input field
+    input_data = input_field.get_attribute('value')
+
+    # Print or process the data as needed
+    print("Data in the input field:", input_data)
+
+finally:
+    # Close the WebDriver
+    driver.quit()
+'''
 
 for i in range(35, 44):
     try:
@@ -199,3 +254,4 @@ for i in range(35, 44):
 
 time.sleep(5)
  
+'''

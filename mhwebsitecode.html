@@ -1,0 +1,421 @@
+<form method="post" action="./" id="aspnetForm" ng-app="myApp" class="ng-pristine ng-valid ng-scope">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="9OKdArdTRXNEC6Ywzvv1JwAIQKj61qvqpZ8BlACS23/pQTGvckHXaIpukhSShr19g3Y+sjNiR0L/ZU4dstM/lu/M2hLTJtf5sSBR06p2JAk6drNig6srrN6Jm5XrQxL0GTahi931fO9ytEeul4Byt1BjKfJB4LDfI8N6VwpvE2qsS0O6/GKYszfbG2uhAvEE59PhLAMw0nO9E+ZlxF0nnpuqECRxNAUoz8rQAYXb6liTnLMj88+XSeGMBfthiYeV02Xnl6l3KvHSkVPNSVgJ0D6Smcm6TYRc4jmuis6/ePWH3t+DMi7bpuNGrh/JcnWHUWEBJILUdSHRB+vmvbpDn8j/C8XAPPsSsNFB8iORllSQLNC87epKKqx1UA3eia7iGZ8pDCCc36FNpVzdpZsPvg9e5GdYr1GHoiGqjPnAY8TXmi+fsjqK+vi3yOR/aINkqCjZR+mF8HV+4gL/XcRCrfP0xZjtAvEi8n4ENDfShIWOU8Vq">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=TcoCw7YRipFGNjN43pyE_NYTIksSCu4qgivzQ18TbRBzLWTNhoYV2EMPSZwUcEPz1XSDyAYEPynlL2iTNdEtA3XA36s1&amp;t=638292301165186153" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=lxIpEtZnq-oLBNJjKbzGhI4-92Ks5tTz4WruHU9kht-l41BfMXXHzJBW48YJRMxZW-4P8U_Dhs15UDR7o0FYaC_YmhKOjfA0sov4fBcoHnqlSIPofmQaWp2D03f458Pe8OY-BMnp-2AMeJONsyLZutIfIKI1&amp;t=ffffffffa0418512" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=bnex08hgybkeY7wz9exF7wLdFE2WZAbvmBBDWxTdACJH2Ntvsv8phjg_z_TQ6ou72gxNbdbh1l9ALDCom-Bj6K5kPXeTFExFDwhoVRRkULuRQufUvlIpPEO-9luKTbElJG78K3hbO8HbpmBT-8DBhg8lJmMIi3Z_m4vsTpE5EQQc2uN30&amp;t=ffffffffa0418512" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div>
+        <div class="header">
+            
+             <img id="img1" src="IMAGES/header.png">
+            <div id="ctl00_divmain" class="menubar">
+                <ul>
+                    <li style="float: left;margin-left:50px">
+                        <marquee scrollamount="3.5" style="text-shadow: none; width: 615px; float: right;">
+                        <span id="ctl00_lblMessage" style="color:Black;font-family:arial;font-size:Small;">MAHA Bhulekh (i.e. Maharashtra Bhumi Abhilekh) - a land record website of Maharashtra state (India) that provides  7/12 extract, 8A extract and Property Card online to citizens</span></marquee>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    <div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+    <div class="page">
+        <div class="content-wrapper">
+            <div id="ctl00_ContentPlaceHolder1_blockAccess" class="Show">
+                <div class="modal">
+                </div>
+                
+            </div>
+            <div class="img-sec ng-scope" ng-controller="defaultCtrl">
+                <img src="Images/div_map.jpg" width="100%" height="433px;">
+                
+            </div>
+            <script type="text/javascript">
+                function getID(idLength) {
+        var chars = "0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
+        chars = chars.split(",");
+        var min = 0;
+        var max = chars.length - 1;
+        var id = "";
+        for (var i = 0; i < idLength; i++) {
+            id += chars[Math.floor(Math.random() * (max - min + 1) + min)];
+        }
+        return id;
+    }
+   
+    </script>
+            
+            <script>
+                var app = angular.module('myApp', []);
+                app.controller('defaultCtrl', function ($scope, $http) {
+                    $scope.mapClick = function (divId, distId) {
+                        var url1;
+                        var getInput = getID(6);
+
+                        if (divId == "1") {
+                            url1 = "Amravati/";
+                        }
+                        else if (divId == "2") {
+                            url1 = "Aurangabad/";
+                          }
+                          else if (divId == "3") {
+                              url1 = "Konkan/";
+                         }
+                         else if (divId == "4") {
+                             url1 = "Nagpur/";
+                        }
+                        else if (divId == "5") {
+                            url1 = "Nashik/";
+                        }
+                        else if (divId == "6") {
+                            url1 = "Pune/";
+                        }
+                        $.ajax({
+                          // url: 'getR1.aspx?r1=' + getInput,//for local
+                          url: url1 + 'getR1.aspx?r1=' + getInput,//for server 
+                            type: 'POST',
+                            contentType: 'application/json; charset=utf-8',
+                            success: function (result) {
+                                if (result.d != '') {
+                                }
+                            },
+                            error: function (error) {
+                                alert(error.responseText);
+                            },
+                            async: false
+                        });
+
+                        if (divId == "1") {
+                            window.location = "Amravati/Amravati.html";
+                        }
+                        else if (divId == "2") {
+                            window.location = "Aurangabad/Aurangabad.html";
+                        }
+                        else if (divId == "3") {
+                            window.location = "Konkan/Konkan.html";
+                        }
+                        else if (divId == "4") {
+                            window.location = "Nagpur/Nagpur.html";
+                        }
+                        else if (divId == "5") {
+                            window.location = "Nashik/Nashik.html";
+                        }
+                        else if (divId == "6") {
+                            window.location = "Pune/Pune.html";
+                        }
+                    };
+
+                });
+
+                function goToNewPage() {
+                    var getInput = getID(6);
+                   
+                    var e = document.getElementById('list');    
+                    var url = e.options[e.selectedIndex].value
+                    var url1 = url.split("/",1);
+
+                    $.ajax({
+                       //url: 'getR1.aspx?r1=' + getInput,//for local
+                       url: url1 + '/getR1.aspx?r1=' + getInput,//for server
+                        type: 'POST',
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (result) {
+                            if (result.d != '') {
+                            }
+                        },
+                        error: function (error) {
+                            alert(error.responseText);
+                        },
+                        async: false
+                    });
+                    if (url != "")
+                        window.open(url);
+
+                }
+               
+                function show() {
+                    var url = document.getElementById('list').options[document.getElementById('list').selectedIndex].value;
+                    if (url == "Amravati/Amravati.html") {
+                        Amravati.style.visibility = 'visible';
+                        Amravati.style.display = 'inline';
+                        Aurangabad.style.display = 'none'; 
+                        Konkan.style.display = 'none';
+                        Nagpur.style.display = 'none';
+                        Nashik.style.display = 'none';
+                        Pune.style.display = 'none';
+                       
+                    }
+                    else if (url == "Aurangabad/Aurangabad.html") {
+                        Aurangabad.style.visibility = 'visible';
+                        Aurangabad.style.display = 'inline';
+                        Amravati.style.display = 'none';
+                        Konkan.style.display = 'none';
+                        Nagpur.style.display = 'none';
+                        Nashik.style.display = 'none';
+                        Pune.style.display = 'none';
+                       
+                    }
+                    else if (url == "Konkan/Konkan.html") {
+                        Konkan.style.visibility = 'visible';
+                        Konkan.style.display = 'inline';
+                        Amravati.style.display = 'none';
+                        Aurangabad.style.display = 'none';
+                        Nagpur.style.display = 'none';
+                        Nashik.style.display = 'none';
+                        Pune.style.display = 'none';
+                    }
+                    else if (url == "Nagpur/Nagpur.html") {
+                        Nagpur.style.visibility = 'visible';
+                        Nagpur.style.display = 'inline';
+                        Amravati.style.display = 'none';
+                        Konkan.style.display = 'none';
+                        Aurangabad.style.display = 'none';
+                        Nashik.style.display = 'none';
+                        Pune.style.display = 'none';
+                    }
+                    else if (url == "Nashik/Nashik.html") {
+                        Nashik.style.visibility = 'visible';
+                        Nashik.style.display = 'inline';
+                        Amravati.style.display = 'none';
+                        Konkan.style.display = 'none';
+                        Nagpur.style.display = 'none';
+                        Aurangabad.style.display = 'none';
+                        Pune.style.display = 'none';
+                    }
+                    else if (url == "Pune/Pune.html") {
+                        Pune.style.visibility = 'visible';
+                        Pune.style.display = 'inline';
+                        Amravati.style.display = 'none';
+                        Konkan.style.display = 'none';
+                        Nagpur.style.display = 'none';
+                        Nashik.style.display = 'none';
+                        Aurangabad.style.display = 'none';
+                    }
+                    else {
+                        Amravati.style.visibility = 'visible';
+                        Amravati.style.display = 'inline';
+                        Aurangabad.style.display = 'none';
+                        Konkan.style.display = 'none';
+                        Nagpur.style.display = 'none';
+                        Nashik.style.display = 'none';
+                        Pune.style.display = 'none';
+                    }
+                }
+                
+            </script>
+            <div class="tab-sec">
+                <table border="0" width="100%" cellspacing="0" style="height: 100%; padding:10px; border-radius:5px; border-color:green">
+                     <tbody><tr style="height:27%">
+                         <td>
+                            <div id="ctl00_ContentPlaceHolder1_Panel4" style="border-color:Green;border-width:1px;border-style:solid;text-align:center;border-radius:10px; height:100% ; Width:49%; display:inline-block">
+	
+                                <p style="margin:0">
+                               <a href="https://digitalsatbara.mahabhumi.gov.in" target="_blank" style="position:relative; opacity:1; margin-left:90px"> <img src="Images/ds712.png" style="border:0px"> </a>           
+                                </p>
+                            
+</div>
+                              <div id="ctl00_ContentPlaceHolder1_Panel5" style="border-color:Green;border-width:1px;border-style:solid;text-align:center;border-radius:10px; height:100%; Width:48% ; display:inline-block">
+	
+                                <p style="margin:0"> 
+                               <a href="https://digitalsatbara.mahabhumi.gov.in/aaplichawdi" target="_blank" style="position:relative; opacity:1; margin-left:130px; margin-right:10px; margin-top:5px"> <img src="Images/chawadi1.png" style="border:0px"> </a>         
+                                </p>
+                            
+</div>
+                        </td>           
+                    </tr>
+                    <tr style="height:1%"><td></td></tr>
+                     <tr style="height:15%">
+                        <td>
+                             <img id="imgtrn" src="Images/logo_trans.png" width="84%">
+                            <div id="ctl00_ContentPlaceHolder1_Panel1" style="border-color:Green;border-width:1px;border-style:solid;text-align:center;border-radius:10px; height:100%">
+	
+                                 <p style="font-size:small; margin-bottom:0px; margin-top:4px"><b>विना स्वाक्षरीत ७/१२, ८अ व मालमत्ता पत्रक पाहण्यासाठी</b></p>
+                                <p style="font-size:small; margin-bottom:0px;margin-top:4px" "=""><b>विभाग निवडा / Select Division</b> 
+                                     <select name="list" id="list" onchange="show()">;
+                                         <option value="Amravati/Amravati.html">अमरावती</option>
+                                         <option value="Aurangabad/Aurangabad.html">छत्रपती संभाजीनगर</option>
+                                         <option value="Konkan/Konkan.html">कोंकण​</option>
+                                         <option value="Nagpur/Nagpur.html">नागपूर</option>
+                                         <option value="Nashik/Nashik.html">नाशिक</option>
+                                         <option value="Pune/Pune.html">पुणे</option>
+                                    </select>                
+                                 <input type="button" value="Go" onclick="goToNewPage()" style="width: 53px; height: 21px">      
+                     </p>  
+                            <div id="Amravati" style="display: none; text-align: center;">  
+                                 <p style="font-size:small; margin-top:0px;margin-bottom:2px">
+                                     <sub>(अकोला, अमरावती, बुलडाणा, यवतमाळ, वाशिम)</sub>
+                                 </p>                               
+                            </div>
+                            <div id="Aurangabad" style="display:none; text-align:center">  
+                                 <p style="font-size:small; margin-top:0px;margin-bottom:2px">
+                                     <sub>(धाराशिव, छत्रपती संभाजीनगर, जालना, नांदेड, परभणी, बीड, लातूर, हिंगोली)</sub>
+                                </p>
+                            </div>
+                            <div id="Konkan" style="display:none;text-align:center"> 
+                                 <p style="font-size:small; margin-top:0px;margin-bottom:2px">
+                                      <sub>(ठाणे, पालघर, मंबई उपनगर, रत्नागिरी, रायगड, सिंधुदुर्ग)</sub>
+                                  </p>                      
+                            </div>
+                            <div id="Nagpur" style="display:none;text-align:center"> 
+                               <p style="font-size:small; margin-top:0px;margin-bottom:2px">
+                                    <sub>(गडचिरोली, गोंदिया, चंद्रपूर, नागपूर, भंडारा, वर्धा)</sub>
+                               </p>
+                           </div>
+                            <div id="Nashik" style="display:none;text-align:center">
+                                 <p style="font-size:small; margin-top:0px;margin-bottom:2px">
+                                      <sub>(अहमदनगर, जळगाव, धुळे, नंदुरबार, नाशिक)</sub>
+                                 </p>
+                            </div>
+                            <div id="Pune" style="display: inline; text-align: center; visibility: visible;">
+                                   <p style="font-size:small; margin-top:0px;margin-bottom:2px">
+                                       <sub>(कोल्हापूर, पुणे, सांगली, सातारा, सोलापूर) </sub>  
+                                   </p>
+                            </div>
+                             
+</div>
+            </td>                   
+            </tr>
+                    <tr style="height:1%"><td></td></tr>
+                     <tr style="height:40%">
+                <td>
+                    <div id="ctl00_ContentPlaceHolder1_Panel2" style="border-color:Green;border-width:1px;border-style:solid;text-align:center;border-radius:10px; height:100%">
+	                                    
+                         <p class="eodb"> <img src="Images/eodb21.png" style="left: 5%;">  </p>
+                         <ul style="padding-top: 20px; padding-bottom:5px; font-weight:bold; padding-left:0px; margin-left: 28px; text-align:left"> 
+                               <li style="font-size:11px; float: left; margin-left:0px; ">                            
+                                    <a href="http://eqjcourts.gov.in" target="_blank" title="महसूल न्यायालयातील वादविवादांची माहिती " style="width:370px;border-radius:3px">महसूल न्यायालयातील वादविवादांची माहिती </a>
+                                  
+                              </li><br>
+                              <li style="font-size: 11px; float: left; margin-left:0px">
+                                    <a href=" https://cersai.org.in/CERSAI/" target="_blank" title="आपल्या मालमत्तेवरील सुरक्षा व्याज  (CERSAI)" style="width:370px;border-radius:3px">आपल्या मालमत्तेवरील सुरक्षा व्याज  (CERSAI)</a>
+                              </li><br>
+                              <li style="font-size: 11px; float: left; margin-left:0px">
+                                    <a title="डिजिटल नकाशे -" style="width:370px;border-radius:3px">डिजिटल नकाशे -</a>
+                                    <a href="http://164.100.185.250/htmldocs/maplist.htm" target="_blank" title="[ मुंबई शहर ]" style="width:370px;border-radius:3px">[ मुंबई शहर ]</a>
+                                    <a href="https://mumbaisuburban.gov.in/land-records-maps" target="_blank" title=" [ मुंबई उपनगर ]" style="width:370px;border-radius:3px"> [ मुंबई उपनगर ]</a>
+                              </li><br>
+                              <li style="font-size: 11px; float: left; margin-left:0px">
+                                    <a href="http://srdp1991.mcgm.gov.in/dpGis" target="_blank" title="जि.आय. एस नकाशे - बृहन्मुंबई महानगरपालिका (GIS MCGM)" style="width:370px;border-radius:3px">जि.आय. एस नकाशे - बृहन्मुंबई महानगरपालिका (GIS MCGM) </a>
+                              </li>
+                        </ul>  
+                    
+</div> 
+                    </td>
+                </tr>
+                      <tr style="height:1%"><td></td></tr>
+                    <tr style="height:10%">
+                <td>
+                      <div id="ctl00_ContentPlaceHolder1_Panel3" style="border-color:Green;border-width:1px;border-style:solid;text-align:left;border-radius:10px; padding:5px; height:100%">
+	
+                             <a title="७/१२ दुरुस्तीसाठी ई हक्क प्रणाली" style="width:370px;border-radius:3px; color:red;font-size: 11px;"><span style="font-size:13px">महत्वाची सूचना : </span> ७/१२ दुरुस्तीसाठी ई हक्क प्रणाली </a>
+                             <a href="https://pdeigr.maharashtra.gov.in" target="_blank" title="७/१२ दुरुस्तीसाठी ई हक्क प्रणाली" style="width:370px;border-radius:3px;margin-left:50px; color:blue; font-size: 11px;"><span style="font-size:13px"> </span> [https://pdeigr.maharashtra.gov.in]</a>
+                      
+</div>       
+                </td>
+            </tr>
+
+
+                    
+         </tbody></table>
+                 </div>
+        </div>
+        <div class="footer" style="margin-bottom: -19px;">
+
+            <table border="0" width="100%" cellspacing="19" cellpadding="0">
+                <tbody><tr>
+                    <td class="auto-style1">
+                        <div style="margin-left:110px;margin-right:110px;font-family:Arial; color:red">  
+                                             <span id="ctl00_ContentPlaceHolder1_lbltxt" style="font-size:Small;font-weight:bold;">महत्वाची सूचना  :  </span>    
+                            <span id="ctl00_ContentPlaceHolder1_Label2" style="font-size:X-Small;font-weight:bold;"> जर  आपण  पाहिलेल्या  ऑनलाईन ७ /१२  मधील माहितीमध्ये  व हस्तलिखित ७/१२ मधील माहिती मध्ये ,  जसे  ७/१२ चे एकूण  क्षेत्र , क्षेत्राचे एकक , खातेदाराचे  नाव, खातेदाराचे  क्षेत्र  या   मध्ये   चूक   अथवा  तफावत  आढळून आल्यास  आपण  अशा    दुरुस्तीसाठी   ऑनलाईन  पद्धातीने  तलाठी यांचेकडे  ई हक्क प्रणाली द्वारे अर्ज  पाठवू  शकता . त्यासाठी   कृपया  <a href=" https://pdeigr.maharashtra.gov.in" target="_blank">https://pdeigr.maharashtra.gov.in</a>   ही लिंक वापरून     Mutation ७/१२  या पर्यायामध्ये  दर्शवलेल्या  माहिती   नुसार  आपले   रजिस्ट्रेशन  व लॉगीन करून जुना हस्तलिखित ७/१२ ऑनलाईन अर्जासोबत अपलोड (Upload) करावा .</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="text-align:center">                
+                    <td class="auto-style1">
+                
+           <span id="ctl00_ContentPlaceHolder1_Label1" style="font-size:1px;">MAHABHULEKHAPP8-3972</span>
+                    </td>
+                </tr>
+                <tr style="text-align:center">
+                    <td class="auto-style1">
+                       
+                    </td>
+                </tr>
+            </tbody></table>
+
+
+       
+        </div>
+       <input type="hidden" id="myField" value="">
+    </div>
+
+    </div>
+        <div class="footer">
+                    <table style="width: 100%">
+                        <tbody><tr>
+                            <td style="width: 20%">
+
+                            </td>
+                            <td style="width: 60%">
+                                <div style="display: inline;text-align: center; ">
+                                     <p>
+                                        सुचना : या संकेतस्थळावर दर्शविलेली माहिती ही कोणत्याही शासकीय अथवा कायदेशीर बाबींसाठी वापरता येणार नाही.<br>
+                                        <b>जमाबंदी आयुक्त आणि संचालक भूमि अभिलेख कार्यालय </b>
+                                        <br>
+                                        तिसरा मजला, नवीन प्रशासकीय इमारत, कौन्सिल हॉल समोर, पुणे<br>
+                                        दूरध्वनी : ०२०-२६०५०००६, 
+                                        ई-मेल :  dlrmah[dot]mah[at]nic[dot]in
+                                    </p>
+                                    <p>
+                                        Best viewed with resolution 1366*768 in Firefox, Chrome, IE.
+                                    </p>
+                               </div>
+                            </td>
+                            <td style="width: 20%">
+                                <div style="display: inline; ">  
+                                    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+                                            <td width="100%">
+                                                <!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT ---><table align="right" width="125" border="0" cellspacing="0" cellpadding="0" title="CLICK TO VERIFY: This site uses a GlobalSign SSL Certificate to secure your personal information."><tbody><tr><td><script src="//ssif1.globalsign.com/SiteSeal/siteSeal/siteSeal/siteSeal.do?p1=bhulekh.mahabhumi.gov.in&amp;p2=SZ90-35&amp;p3=image&amp;p4=en&amp;p5=V0022&amp;p6=S001&amp;p7=https"></script><span><img name="ss_imgTag" border="0" src="//ssif1.globalsign.com/SiteSeal/siteSeal/siteSeal/siteSealImage.do?p1=bhulekh.mahabhumi.gov.in&amp;p2=SZ90-35&amp;p3=image&amp;p4=en&amp;p5=V0022&amp;p6=S001&amp;p7=https&amp;deterDn=" alt="" oncontextmenu="return false;" galleryimg="no" style="width:90px"></span><span id="ss_siteSeal_fin_SZ90-35_image_en_V0022_S001"></span><script type="text/javascript" src="https://seal.globalsign.com/SiteSeal/gmogs_image_90-35_en_blue.js"></script></td></tr></tbody></table><!--- DO NOT EDIT - GlobalSign SSL Site Seal Code - DO NOT EDIT --->
+                                            </td>
+                                        </tr> 
+                                    </tbody></table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </div>
+    </form>
